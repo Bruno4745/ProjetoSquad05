@@ -1,9 +1,10 @@
-import Menu from './Components/Menu'
-import Routes from './Routes'
-import {Container} from 'react-bootstrap'
-import {BrowserRouter} from 'react-router-dom'
+import Menu from "./Components/Menu";
+import Footer from "./Components/Footer";
+import Routes from "./Routes";
+import { Container } from "react-bootstrap";
+import { BrowserRouter } from "react-router-dom";
 
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
@@ -15,6 +16,13 @@ function App() {
             <Routes />
           </Container>
         </main>
+        <Container>
+          <div>
+            <footer>
+              <Footer />
+            </footer>
+          </div>
+      </Container>
       </div>
     </BrowserRouter>
   );

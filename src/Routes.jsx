@@ -4,7 +4,7 @@ import Denuncia from './Pages/Denuncia'
 import Depoimentos from './Pages/Depoimentos'
 import faleConosco from './Pages/FaleConosco'
 import Home from './Pages/Home'
-import InfoGestante from './Pages/InfoGestante'
+import GestanteMae from './Pages/InfoGestante/'
 import InfoProfissional from './Pages/InfoProfissional'
 import ProcurarAjuda from './Pages/ProcurarAjuda'
 
@@ -12,7 +12,7 @@ const Routes = () => {
     return(
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/gestante' component={InfoGestante} />
+            <Route exact path='/gestantemae' component={GestanteMae} />
             <Route exact path='/profissional' component={InfoProfissional} />
             <Route exact path='/procurarAjuda' component={ProcurarAjuda} />
             <Route exact path='/depoimentos' component={Depoimentos} />

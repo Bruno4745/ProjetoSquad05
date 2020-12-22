@@ -15,7 +15,7 @@ const Menu = () => {
                     <Navbar.Collapse>
                         <Nav className="mr-auto">
                         <NavDropdown title="Informativo">
-                            <NavDropdown.Item as={Link} href="/gestante" to="/gestante">Gestante</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/gestanteMae" to="/gestanteMae">Gestante/Mae</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/profissional" to="/profissional">Profissional</NavDropdown.Item>
                         </NavDropdown>
                             {/* <Nav.Link as={Link} href="/informativo" to="/informativo">Informativo</Nav.Link> */}
