@@ -99,12 +99,12 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="1">
+              <Accordion.Toggle as={Card.Header} eventKey="2">
                 <h6>
                   <strong>Direitos da Gestante/Mae</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="1">
+              <Accordion.Collapse eventKey="2">
                 <Card.Body>
                   <ul>
                     <li>
@@ -178,12 +178,12 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="2">
+              <Accordion.Toggle as={Card.Header} eventKey="3">
                 <h6>
                   <strong>É Crime!</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="2">
+              <Accordion.Collapse eventKey="3">
                 <Card.Body>
                   <ul>
                     <li>
@@ -225,15 +225,14 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="3">
+              <Accordion.Toggle as={Card.Header} eventKey="4">
                 <h6>
                   <strong>E Mais...</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="3">
+              <Accordion.Collapse eventKey="4">
                 <Card.Body>
                   <h6>
-                  
                     Algumas orientações são relevantes ao processo decisório da
                     gestante, como:
                   </h6>

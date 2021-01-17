@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import GestanteMae from './Pages/InfoGestante/'
 import InfoProfissional from './Pages/InfoProfissional'
 import ProcurarAjuda from './Pages/ProcurarAjuda'
+import SobreNos from './Pages/SobreNos'
 
 const Routes = () => {
     return(
@@ -18,6 +19,8 @@ const Routes = () => {
             <Route exact path='/depoimentos' component={Depoimentos} />
             <Route exact path='/faleConosco' component={faleConosco} />
             <Route exact path='/denuncia' component={Denuncia} />
+            <Route exact path='/sobrenos' component={SobreNos} />
+
         </Switch>
     )
 }

@@ -94,3 +94,13 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-12-22 17:21:13
+
+CREATE TABLE `squad`(
+`id_integrante` int NOT NULL AUTO_INCREMENT,
+`nome` varchar(20),
+`foto` varchar (200),
+`linkedin` varchar(200),
+`github` varchar(200),
+`funcao` varchar(100),
+PRIMARY KEY (`id_integrante`))
+ENGINE=InnoDB CHARSET=utf8;
