@@ -8,7 +8,7 @@ export default function SobreNos() {
 
   useEffect(async () => {
     const resposta = await fetch(
-      `http://localhost/Nova%20pasta/ProjetoSquad05/php/api/squad.php`
+      `http://localhost/ProjetoSquad05/php/api/squad.php`
     );
     const dados = await resposta.json();
     setSquad(dados);
