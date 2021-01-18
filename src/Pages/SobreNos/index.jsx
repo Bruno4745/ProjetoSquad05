@@ -1,22 +1,23 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Squad from "../../Components/SobreNos";
-import { Jumbotron, Container, Card } from "react-bootstrap";
+import { Jumbotron, Container, Row } from "react-bootstrap";
 
 export default function SobreNos() {
   const [squad, setSquad] = useState([]);
 
-  useEffect(async () => {
-    const resposta = await fetch(
-      `http://localhost/ProjetoSquad05/php/api/squad.php`
-    );
-    const dados = await resposta.json();
-    setSquad(dados);
+  useEffect(() => {
+    async function fetchData() {
+      const resposta = await fetch(`http://localhost/ProjetoSquad05/php/api/squad.php`);
+      const dados = await resposta.json();
+      setSquad(dados);
+    }
+    fetchData()
   }, []);
 
   return (
     <Container>
-      <Jumbotron fluid>
+      <Jumbotron>
         <h1>Sobre Nós</h1>
       </Jumbotron>
       <h2>Quem Somos</h2>
@@ -83,18 +84,20 @@ export default function SobreNos() {
 
       <div>
         <h2>Mais Sobre Nós</h2>
-        {squad &&
-          squad.map((item) => (
-            <Squad
-              key={item.id_integrante}
-              id={item.id_integrante}
-              nome={item.nome}
-              foto={item.foto}
-              linkedin={item.linkedin}
-              github={item.github}
-              funcao={item.funcao}
-            />
-          ))}
+        <Row>
+          {squad &&
+            squad.map((item) => (
+              <Squad
+                key={item.id_integrante}
+                id={item.id_integrante}
+                nome={item.nome}
+                foto={require(`${item.foto}`).default}
+                linkedin={item.linkedin}
+                github={item.github}
+                funcao={item.funcao}
+              />
+            ))}
+        </Row>
       </div>
     </Container>
   );

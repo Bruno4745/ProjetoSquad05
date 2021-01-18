@@ -97,10 +97,18 @@ UNLOCK TABLES;
 
 CREATE TABLE `squad`(
 `id_integrante` int NOT NULL AUTO_INCREMENT,
-`nome` varchar(20),
+`nome` varchar(50),
 `foto` varchar (200),
 `linkedin` varchar(200),
 `github` varchar(200),
 `funcao` varchar(100),
 PRIMARY KEY (`id_integrante`))
 ENGINE=InnoDB CHARSET=utf8;
+
+insert into squad values
+(default, 'André Marques', './img/andremarques.png', 'https://www.linkedin.com/in/andremarques91/', 'https://github.com/andrem91', 'Programador'),
+(default, 'Gilda Monteiro', './img/gildamonteiro.png', 'https://www.linkedin.com/in/giih97/', 'https://github.com/Giih97', 'Programadora'),
+(default, 'Nathany Mendonça', './img/nathanymendonca.png', 'https://www.linkedin.com/in/nathanymendonca/', 'https://github.com/nathanymendonca', 'Programadora'),
+(default, 'Diego Ribeiro', './img/diegoribeiro.png', 'https://www.linkedin.com/in/dr-diego-ribeiro/', 'https://github.com/dr-diegoribeiro', 'Programador'),
+(default, 'Edmar Miller', './img/edmarmiller.png', 'https://www.linkedin.com/in/edmar-miller/', 'https://github.com/EdmarMiller', 'Programador'),
+(default, 'Bruno Gouveia', './img/brunogouveia.png', 'https://www.linkedin.com/in/bruno-gouveia-4b21471b7/', 'https://github.com/Bruno4745', 'Programador');

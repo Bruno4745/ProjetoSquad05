@@ -49,6 +49,7 @@ const GestanteMae = () => {
                             <a
                               href="https://www.planalto.gov.br/ccivil_03/leis/L8069.htm"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <br></br>
                               LEI Nº 8.069, DE 13 DE JULHO DE 1990.
@@ -356,7 +357,8 @@ const GestanteMae = () => {
             <p>
               <a
                 href="http://www.neca.org.br/wp-content/uploads/cartilha%20-%20politica%20de%20atencao%20a%20gestante.pdf"
-                target="_blank"
+                target="_blank "
+                rel="noreferrer"
               >
                 Cartilha Política de Atenção à Gestante
               </a>
@@ -365,6 +367,7 @@ const GestanteMae = () => {
               <a
                 href="http://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
                 target="_blank"
+                rel="noreferrer"
               >
                 Estatuto da Criança e do Adolescente - LEI 8.069/90
               </a>
