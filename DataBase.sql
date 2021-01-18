@@ -112,3 +112,4 @@ insert into squad values
 (default, 'Diego Ribeiro', './img/diegoribeiro.png', 'https://www.linkedin.com/in/dr-diego-ribeiro/', 'https://github.com/dr-diegoribeiro', 'Programador'),
 (default, 'Edmar Miller', './img/edmarmiller.png', 'https://www.linkedin.com/in/edmar-miller/', 'https://github.com/EdmarMiller', 'Programador'),
 (default, 'Bruno Gouveia', './img/brunogouveia.png', 'https://www.linkedin.com/in/bruno-gouveia-4b21471b7/', 'https://github.com/Bruno4745', 'Programador');
+
