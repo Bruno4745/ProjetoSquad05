@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form, Button, Container } from 'react-bootstrap'
 
-const faleConosco = () => {
+const Contatos = () => {
     return (
       <Container>
         <div className="my-4">
-          <h2>Fale Conosco</h2>
+          <h2>Contatos</h2>
           <Form>
             <Form.Group controlId="nome">
               <Form.Label>Nome: </Form.Label>
@@ -28,4 +28,4 @@ const faleConosco = () => {
     );
 };
 
-export default faleConosco;
+export default Contatos;
