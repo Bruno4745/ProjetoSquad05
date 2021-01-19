@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import Denuncia from './Pages/Denuncia'
 import Depoimentos from './Pages/Depoimentos'
-import faleConosco from './Pages/FaleConosco'
+import Contatos from './Pages/Contatos'
 import Home from './Pages/Home'
 import GestanteMae from './Pages/InfoGestante/'
 import InfoProfissional from './Pages/InfoProfissional'
@@ -17,7 +17,7 @@ const Routes = () => {
             <Route exact path='/profissional' component={InfoProfissional} />
             <Route exact path='/procurarAjuda' component={ProcurarAjuda} />
             <Route exact path='/depoimentos' component={Depoimentos} />
-            <Route exact path='/faleConosco' component={faleConosco} />
+            <Route exact path='/contatos' component={Contatos} />
             <Route exact path='/denuncia' component={Denuncia} />
             <Route exact path='/sobrenos' component={SobreNos} />
 
