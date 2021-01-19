@@ -49,6 +49,7 @@ const GestanteMae = () => {
                             <a
                               href="https://www.planalto.gov.br/ccivil_03/leis/L8069.htm"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <br></br>
                               LEI Nº 8.069, DE 13 DE JULHO DE 1990.
@@ -99,12 +100,12 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="1">
+              <Accordion.Toggle as={Card.Header} eventKey="2">
                 <h6>
                   <strong>Direitos da Gestante/Mae</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="1">
+              <Accordion.Collapse eventKey="2">
                 <Card.Body>
                   <ul>
                     <li>
@@ -178,12 +179,12 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="2">
+              <Accordion.Toggle as={Card.Header} eventKey="3">
                 <h6>
                   <strong>É Crime!</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="2">
+              <Accordion.Collapse eventKey="3">
                 <Card.Body>
                   <ul>
                     <li>
@@ -225,15 +226,14 @@ const GestanteMae = () => {
             </Card>
 
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="3">
+              <Accordion.Toggle as={Card.Header} eventKey="4">
                 <h6>
                   <strong>E Mais...</strong>
                 </h6>
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="3">
+              <Accordion.Collapse eventKey="4">
                 <Card.Body>
                   <h6>
-                  
                     Algumas orientações são relevantes ao processo decisório da
                     gestante, como:
                   </h6>
@@ -357,7 +357,8 @@ const GestanteMae = () => {
             <p>
               <a
                 href="http://www.neca.org.br/wp-content/uploads/cartilha%20-%20politica%20de%20atencao%20a%20gestante.pdf"
-                target="_blank"
+                target="_blank "
+                rel="noreferrer"
               >
                 Cartilha Política de Atenção à Gestante
               </a>
@@ -366,6 +367,7 @@ const GestanteMae = () => {
               <a
                 href="http://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
                 target="_blank"
+                rel="noreferrer"
               >
                 Estatuto da Criança e do Adolescente - LEI 8.069/90
               </a>
