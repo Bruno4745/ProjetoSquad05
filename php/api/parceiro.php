@@ -15,5 +15,23 @@
         }
 
         echo json_encode($parceiro); 
-    } 
+    } else if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        
+        $categoria = $_POST['categoria'];
+        $nome = $_POST['nome'];
+        $logradouro = $_POST['logradouro'];
+        $numero = $_POST['numero'];
+        $complemento = $_POST['complemento'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $cep = $_POST['cep'];
+        $contato = $_POST['contato'];
+        $telefone = $_POST['telefone'];
+        $email = $_POST['email'];
+        $site = $_POST['site'];
+
+        $sql = "INSERT INTO parceiros (nome, email) VALUES ('$nome', '$email');";
+            
+        nonquery($sql);
+    }
 ?>

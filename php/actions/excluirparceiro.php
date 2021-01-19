@@ -1,13 +1,14 @@
 <?php
 
 require_once "conexao.php";
+    
+    $botao = $_POST['botao'];
 
-    $id = $_GET['id'];
-
-    echo $id;
-
-    $sql = "DELETE FROM parceiros WHERE id_parceiros = $id;";
-    nonquery($sql);
+    if($botao == 'Excluir'){
+        $id = $_GET['id'];
+        $sql = "DELETE FROM parceiros WHERE id_parceiros = $id;";
+        nonquery($sql);
+    }
 
     header("Location: http://localhost:3000/procurarAjuda");
 

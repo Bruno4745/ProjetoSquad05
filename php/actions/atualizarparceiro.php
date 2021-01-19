@@ -2,16 +2,18 @@
 
 require_once "conexao.php";
 
-    $id = $_GET['id'];
-    $nome = $_POST['nome'];
-    $cidade = $_POST['cidade'];
-    $telefone = $_POST['telefone'];
+    $botao = $_POST['botao'];
 
-    echo $id, $nome, $cidade, $telefone;
+    if($botao == 'Alterar'){
+        $id = $_GET['id'];
+        $nome = $_POST['nome'];
+        $cidade = $_POST['cidade'];
+        $telefone = $_POST['telefone'];
 
-    $sql = "UPDATE parceiros SET nome='$nome', cidade='$cidade', telefone='$telefone' WHERE id_parceiros = $id;";
-    nonquery($sql);
+        echo $id, $nome, $cidade, $telefone;
 
-    header("Location: http://localhost:3000/procurarAjuda");
-
+        $sql = "UPDATE parceiros SET nome='$nome', cidade='$cidade', telefone='$telefone' WHERE id_parceiros = $id;";
+        nonquery($sql);
+    }
+        header("Location: http://localhost:3000/procurarAjuda");
 ?>
