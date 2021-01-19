@@ -113,3 +113,12 @@ insert into squad values
 (default, 'Edmar Miller', './img/edmarmiller.png', 'https://www.linkedin.com/in/edmar-miller/', 'https://github.com/EdmarMiller', 'Programador'),
 (default, 'Bruno Gouveia', './img/brunogouveia.png', 'https://www.linkedin.com/in/bruno-gouveia-4b21471b7/', 'https://github.com/Bruno4745', 'Programador');
 
+CREATE TABLE IF NOT EXISTS `usuarios` (
+      `id_adm` INT NOT NULL AUTO_INCREMENT,
+      `nome` VARCHAR( 50 ) NOT NULL ,
+      `usuario_adm` VARCHAR( 25 ) NOT NULL ,
+      `senha` VARCHAR( 40 ) NOT NULL ,
+      `email` VARCHAR( 100 ) NOT NULL ,
+      `cadastro` DATETIME NOT NULL ,
+      PRIMARY KEY (`id_adm`)) ENGINE=InnoDB CHARSET=utf8;
+      
