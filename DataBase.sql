@@ -106,10 +106,19 @@ PRIMARY KEY (`id_integrante`))
 ENGINE=InnoDB CHARSET=utf8;
 
 insert into squad values
-(default, 'André Marques', './img/andremarques.png', 'https://www.linkedin.com/in/andremarques91/', 'https://github.com/andrem91', 'Programador'),
-(default, 'Gilda Monteiro', './img/gildamonteiro.png', 'https://www.linkedin.com/in/giih97/', 'https://github.com/Giih97', 'Programadora'),
-(default, 'Nathany Mendonça', './img/nathanymendonca.png', 'https://www.linkedin.com/in/nathanymendonca/', 'https://github.com/nathanymendonca', 'Programadora'),
-(default, 'Diego Ribeiro', './img/diegoribeiro.png', 'https://www.linkedin.com/in/dr-diego-ribeiro/', 'https://github.com/dr-diegoribeiro', 'Programador'),
-(default, 'Edmar Miller', './img/edmarmiller.png', 'https://www.linkedin.com/in/edmar-miller/', 'https://github.com/EdmarMiller', 'Programador'),
-(default, 'Bruno Gouveia', './img/brunogouveia.png', 'https://www.linkedin.com/in/bruno-gouveia-4b21471b7/', 'https://github.com/Bruno4745', 'Programador');
+(default, 'André Marques', './img/andremarques.png', 'https://www.linkedin.com/in/andremarques91/', 'https://github.com/andrem91', 'Dev Fullstack - Frontend'),
+(default, 'Bruno Gouveia', './img/brunogouveia.png', 'https://www.linkedin.com/in/bruno-gouveia-4b21471b7/', 'https://github.com/Bruno4745', 'Dev Fullstack - Backend'),
+(default, 'Diego Ribeiro', './img/diegoribeiro.png', 'https://www.linkedin.com/in/dr-diego-ribeiro/', 'https://github.com/dr-diegoribeiro', 'Dev Fullstack - Social Median'),
+(default, 'Edmar Miller', './img/edmarmiller.png', 'https://www.linkedin.com/in/edmar-miller/', 'https://github.com/EdmarMiller', 'Dev Fullstack - Frontend'),
+(default, 'Gilda Monteiro', './img/gildamonteiro.png', 'https://www.linkedin.com/in/giih97/', 'https://github.com/Giih97', 'Dev Fullstack - Pesquisadora'),
+(default, 'Nathany Mendonça', './img/nathanymendonca.png', 'https://www.linkedin.com/in/nathanymendonca/', 'https://github.com/nathanymendonca', 'Dev Fullstack - Pesquisadora');
 
+CREATE TABLE IF NOT EXISTS `usuarios` (
+      `id_adm` INT NOT NULL AUTO_INCREMENT,
+      `nome` VARCHAR( 50 ) NOT NULL ,
+      `usuario_adm` VARCHAR( 25 ) NOT NULL ,
+      `senha` VARCHAR( 40 ) NOT NULL ,
+      `email` VARCHAR( 100 ) NOT NULL ,
+      `cadastro` DATETIME NOT NULL ,
+      PRIMARY KEY (`id_adm`)) ENGINE=InnoDB CHARSET=utf8;
+      

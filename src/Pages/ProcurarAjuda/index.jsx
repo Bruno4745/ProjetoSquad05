@@ -1,25 +1,26 @@
 import React from "react";
 import { Container, Form, Button, Table } from "react-bootstrap";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
-import ModalLogin from "../../Components/ProcurarAjuda/Modal";
+import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
 
 const ProcurarAjuda = () => {
-
   const [parceiros, setParceiros] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const resposta = await fetch("http://localhost/ProjetoSquad05/php/api/parceiro.php");
+      const resposta = await fetch(
+        "http://localhost/ProjetoSquad05/php/api/parceiro.php"
+      );
       const dados = await resposta.json();
       setParceiros(dados);
     }
-    fetchData()
+    fetchData();
   }, []);
 
-  return (
-     <Container>
 
+  return (
+    <Container>
       <div>
         <Table striped bordered hover>
         <thead>
@@ -42,10 +43,9 @@ const ProcurarAjuda = () => {
             </tbody>
           </Table>
       </div>         
-      <ModalLogin/>
+      <ModalCadastro/>
     </Container>
-   
-  )
-}
+  );
+};
 
 export default ProcurarAjuda;

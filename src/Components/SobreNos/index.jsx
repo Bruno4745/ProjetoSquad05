@@ -2,8 +2,8 @@ import { Card, Col } from "react-bootstrap";
 
 function Squad(props) {
   return (
-    <Col md={4} className="mb-2">
-      <Card className="w-100">
+    <Col lg={4} md={3} className="mb-2">
+      <Card className="text-center">
         <Card.Img
           variant="top"
           src={props.foto}
@@ -15,13 +15,13 @@ function Squad(props) {
           <Card.Link href={props.github} target=" blank">
             GitHub
           </Card.Link>
+          <br />
           <Card.Link href={props.linkedin} target=" blank">
             Linkedin
           </Card.Link>
         </Card.Body>
       </Card>
     </Col>
-
   );
 }
 
