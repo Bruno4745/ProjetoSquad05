@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Form, Button, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
-import ModalLogin from "../../Components/ProcurarAjuda/Login";
+import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceirosAdm";
+import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
 
 const ProcurarAjuda = () => {
   const [parceiros, setParceiros] = useState([]);
@@ -28,6 +28,7 @@ const ProcurarAjuda = () => {
             <th>Parceiro</th>
             <th>Endereço</th>
             <th>Telefone</th>
+            <th>Acao</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +43,7 @@ const ProcurarAjuda = () => {
             </tbody>
           </Table>
       </div>         
-      <ModalLogin/>
+      <ModalCadastro/>
     </Container>
   );
 };

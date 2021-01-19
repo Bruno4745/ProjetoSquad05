@@ -2,21 +2,23 @@
     header("Access-Control-Allow-Origin:*");
 
     require_once "../actions/conexao.php";
-    session_start();
 
-    if(EMPTY($_POST['email']) || EMPTY($_POST['senha'])){
-    } else {
 
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $email = $_GET['email'];
+        $senha = $_GET['senha'];
+
+        echo $email;
 
         $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha';"; 
-        $result = $conn->query($sql);
+        $result = query($sql);
         $usuario = mysqli_fetch_assoc($result);
 
         if($usuario){ 
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
-            header("location: ./http://localhost:3001/procurarAjuda");
-            
+            header("location: http://localhost:3000/procurarAjudaAdm");
+        } else {
+            header("location: http://localhost:3000/procurarAjuda");
+        }
+    
     ?>
