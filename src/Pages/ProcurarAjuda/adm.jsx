@@ -10,7 +10,7 @@ const ProcurarAjuda = () => {
   useEffect(() => {
     async function fetchData() {
       const resposta = await fetch(
-        "http://localhost/ProjetoSquad05/php/api/parceiro.php"
+        "https://unfadable-air.000webhostapp.com/api/parceiro.php"
       );
       const dados = await resposta.json();
       setParceiros(dados);
@@ -45,7 +45,7 @@ const ProcurarAjuda = () => {
       </div>         
       <ModalCadastro/>
       {' '}
-      <Button href="http://localhost:3000/procurarAjuda">Sair</Button>
+      <Button href="https://projeto-squad05.vercel.app/procurarAjuda">Sair</Button>
     </Container>
   );
 };

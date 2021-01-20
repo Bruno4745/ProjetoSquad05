@@ -6,7 +6,7 @@ const Contatos = () => {
     const enviaMensagem = async (evento) => {
         evento.preventDefault();
 
-        const url = "http://localhost/ProjetoSquad05/php/api/faleconosco.php";
+        const url = "https://unfadable-air.000webhostapp.com/api/faleconosco.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
             method: "POST",

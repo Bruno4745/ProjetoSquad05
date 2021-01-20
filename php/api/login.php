@@ -11,8 +11,8 @@
         $usuario = mysqli_fetch_assoc($result);
 
         if($usuario){ 
-            header("location: http://localhost:3000/procurarAjudaAdm");
+            header("location: https://projeto-squad05.vercel.app/procurarAjudaAdm");
         } else {
-            header("location: http://localhost:3000/procurarAjuda");
+            header("location: https://projeto-squad05.vercel.app/procurarAjuda");
         }
     ?>

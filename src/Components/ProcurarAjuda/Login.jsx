@@ -16,7 +16,7 @@ export default function ModalLogin() {
           <Modal.Title id="contained-modal-title-vcenter">Acesso Restrito</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form action="http://localhost/ProjetoSquad05/php/api/login.php" method="GET">
+          <Form action="https://unfadable-air.000webhostapp.com/api/login.php" method="GET">
             <Form.Group>
               <Form.Label>E-mail</Form.Label>
               <Form.Control type="email" id="email" name="email"></Form.Control>

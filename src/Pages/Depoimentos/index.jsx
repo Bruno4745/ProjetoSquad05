@@ -6,7 +6,7 @@ import Depoimento from '../../Components/Depoimento';
 const Depoimentos = () => {
 
     const enviaDepoimento = async (evento) => {
-        const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
+        const url = "https://unfadable-air.000webhostapp.com/api/depoimento.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
             method: "POST",
@@ -18,7 +18,7 @@ const Depoimentos = () => {
 
     useEffect(() => {
         async function fethData() {
-            const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
+            const url = "https://unfadable-air.000webhostapp.com/api/depoimento.php";
             const resposta = await fetch(url);
             const resultado = await resposta.json();
             setDepoimentos(resultado);

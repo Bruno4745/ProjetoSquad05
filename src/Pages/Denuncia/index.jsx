@@ -4,7 +4,7 @@ import { Form, Button, Container } from 'react-bootstrap'
 const Denuncia = () => {
 
     const enviaDenuncia = async (evento) => {
-        const url = "http://localhost/ProjetoSquad05/php/api/denuncia.php";
+        const url = "https://unfadable-air.000webhostapp.com/api/denuncia.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
             method: "POST",

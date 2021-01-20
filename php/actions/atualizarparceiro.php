@@ -52,5 +52,5 @@ require_once "conexao.php";
         $sql = "UPDATE parceiros SET categoria='$categoria', nome='$nome', logradouro='$logradouro', numero='$numero', complemento='$complemento', id_cidade='$id_cidade', id_estado='$id_estado', cep='$cep', contato='$contato', telefone='$telefone', email='$email', site_parceiro='$site' WHERE id_parceiros = $id;";
         nonquery($sql);
     }
-        header("Location: http://localhost:3000/procurarAjudaAdm");
+        header("Location: https://projeto-squad05.vercel.app/procurarAjudaAdm");
 ?>
