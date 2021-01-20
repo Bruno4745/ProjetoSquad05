@@ -4,8 +4,6 @@ import { Form, Button, Container } from 'react-bootstrap'
 const Contatos = () => {
 
     const enviaMensagem = async (evento) => {
-        evento.preventDefault();
-
         const url = "https://unfadable-air.000webhostapp.com/api/faleconosco.php";
         const dados = new FormData(evento.target);
         await fetch(url, {

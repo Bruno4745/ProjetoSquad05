@@ -84,7 +84,7 @@ export default function SobreNos() {
 
       <div>
         <h2>Mais Sobre Nós</h2>
-        <Row className='w-75 mx-auto'>
+        <Row className='w-100 mx-auto'>
           {squad &&
             squad.map((item) => (
               <Squad

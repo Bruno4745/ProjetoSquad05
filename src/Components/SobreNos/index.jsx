@@ -2,7 +2,7 @@ import { Card, Col } from "react-bootstrap";
 
 function Squad(props) {
   return (
-    <Col lg={4} md={3} className="mb-2">
+    <Col lg={4} md={6} className="mb-3">
       <Card className="text-center">
         <Card.Img
           variant="top"
