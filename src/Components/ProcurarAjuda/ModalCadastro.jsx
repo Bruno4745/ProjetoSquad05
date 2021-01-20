@@ -1,11 +1,9 @@
 import React from "react";
 import { Modal, Button, Form } from "react-bootstrap";
-import { useEffect, useState } from 'react';
 
 function MyVerticallyCenteredModal(props) {
 
     const enviaParceiro = async (evento) => {
-
         const url = "http://localhost/ProjetoSquad05/php/api/parceiro.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
@@ -80,7 +78,7 @@ function MyVerticallyCenteredModal(props) {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button onClick={props.onHide}>Fechar</Button>
         </Modal.Footer>
       </Modal>
     );

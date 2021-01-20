@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
 import ModalLogin from "../../Components/ProcurarAjuda/Login";
@@ -42,7 +42,7 @@ const ProcurarAjuda = () => {
             </tbody>
           </Table>
       </div>         
-      <ModalLogin/>
+    <ModalLogin/>
     </Container>
   );
 };

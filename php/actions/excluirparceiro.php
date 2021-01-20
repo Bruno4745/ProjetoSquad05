@@ -10,6 +10,6 @@ require_once "conexao.php";
         nonquery($sql);
     }
 
-    header("Location: http://localhost:3000/procurarAjuda");
+    header("Location: http://localhost:3000/procurarAjudaAdm");
 
 ?>

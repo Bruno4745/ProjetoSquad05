@@ -19,9 +19,7 @@ const Contatos = () => {
               <Form.Label>Mensagem: </Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Enviar
-            </Button>
+            <Button variant="primary" type="submit">Enviar</Button>
           </Form>
         </div>
       </Container>

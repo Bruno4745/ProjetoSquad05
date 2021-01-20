@@ -4,7 +4,6 @@ import { Form, Button, Container } from 'react-bootstrap'
 const Denuncia = () => {
 
     const enviaDenuncia = async (evento) => {
-
         const url = "http://localhost/ProjetoSquad05/php/api/denuncia.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
@@ -12,6 +11,7 @@ const Denuncia = () => {
             body: dados
         });
     }
+
     return(
         <Container>
         <div className="my-4">
@@ -34,9 +34,7 @@ const Denuncia = () => {
               <Form.Control name="mensagem" as="textarea" rows={10} placeholder="Descreva como foi o atendimento" />
             </Form.Group>
             
-            <Button variant="primary" type="submit">
-              Enviar
-            </Button>
+            <Button variant="primary" type="submit">Enviar</Button>
           </Form>
         </div>
       </Container>

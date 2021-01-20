@@ -44,6 +44,8 @@ const ProcurarAjuda = () => {
           </Table>
       </div>         
       <ModalCadastro/>
+      {' '}
+      <Button href="http://localhost:3000/procurarAjuda">Sair</Button>
     </Container>
   );
 };

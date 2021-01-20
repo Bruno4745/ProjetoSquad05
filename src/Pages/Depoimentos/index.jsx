@@ -6,7 +6,6 @@ import Depoimento from '../../Components/Depoimento';
 const Depoimentos = () => {
 
     const enviaDepoimento = async (evento) => {
-
         const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
@@ -36,8 +35,6 @@ const Depoimentos = () => {
                 </Form.Group>
                 <Form.Group>
                     <Button type="submit">Enviar</Button>
-                    {'  '}
-                    <Button type="reset" variant="warning">Limpar</Button>
                 </Form.Group>
             </Form>
             <h2>Depoimentos enviados:</h2>
