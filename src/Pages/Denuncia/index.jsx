@@ -1,12 +1,9 @@
 import React from 'react';
 import { Form, Button, Container } from 'react-bootstrap'
 
-
-
 const Denuncia = () => {
 
     const enviaDenuncia = async (evento) => {
-        evento.preventDefault();
 
         const url = "http://localhost/ProjetoSquad05/php/api/denuncia.php";
         const dados = new FormData(evento.target);
@@ -19,7 +16,6 @@ const Denuncia = () => {
         <Container>
         <div className="my-4">
           <h2>Denúncia</h2>
-          
           <Form onSubmit={enviaDenuncia} className="my-4">
             <Form.Group controlId="nome">
               <Form.Label>Nome do estabelecimento: </Form.Label>
@@ -44,7 +40,7 @@ const Denuncia = () => {
           </Form>
         </div>
       </Container>
-    );
+    )
 };
 
 export default Denuncia;

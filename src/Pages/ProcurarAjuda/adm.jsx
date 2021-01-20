@@ -1,13 +1,8 @@
 import React from "react";
 import { Container, Form, Button, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
-<<<<<<< HEAD
+import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceirosAdm";
 import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
-import Filtro from "../../Components/ProcurarAjuda/Filtro";
-=======
-import ModalLogin from "../../Components/ProcurarAjuda/Login";
->>>>>>> 80a4347031cef0ff29f905d5348d6ad4ebbe9b5d
 
 const ProcurarAjuda = () => {
   const [parceiros, setParceiros] = useState([]);
@@ -33,6 +28,7 @@ const ProcurarAjuda = () => {
             <th>Parceiro</th>
             <th>Endereço</th>
             <th>Telefone</th>
+            <th>Acao</th>
           </tr>
         </thead>
         <tbody>
@@ -47,12 +43,7 @@ const ProcurarAjuda = () => {
             </tbody>
           </Table>
       </div>         
-<<<<<<< HEAD
       <ModalCadastro/>
-      < Filtro/>
-=======
-      <ModalLogin/>
->>>>>>> 80a4347031cef0ff29f905d5348d6ad4ebbe9b5d
     </Container>
   );
 };

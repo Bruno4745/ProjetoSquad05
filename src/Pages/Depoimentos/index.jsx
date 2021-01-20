@@ -6,7 +6,6 @@ import Depoimento from '../../Components/Depoimento';
 const Depoimentos = () => {
 
     const enviaDepoimento = async (evento) => {
-        evento.preventDefault();
 
         const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
         const dados = new FormData(evento.target);
