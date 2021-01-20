@@ -72,7 +72,7 @@
                     <label for="site">Site: </label>
                     <input value="<?php echo $row['site'] ?>" type="text" class="form-control" id="site" name="site">
                 </div>
-                <button class="btn btn-primary mt-3" type="submit" name="botao" value="Excluir">Excluir</button>
+                <button class="btn btn-danger mt-3" type="submit" name="botao" value="Excluir">Excluir</button>
                 <button class="btn btn-primary mt-3" type="submit" name="botao" value="Voltar">Voltar</button>
             </form>
         </div>

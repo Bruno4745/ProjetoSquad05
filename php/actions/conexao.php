@@ -4,7 +4,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $database = "recomecar";
+        $database = "entregalegal";
 
         $conn = mysqli_connect($servername, $username, $password, $database);
         $conn->query("set names utf8");
@@ -16,7 +16,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $database = "recomecar";
+        $database = "entregalegal";
 
         $conn = mysqli_connect($servername, $username, $password, $database);
         $conn->query("set names utf8");
