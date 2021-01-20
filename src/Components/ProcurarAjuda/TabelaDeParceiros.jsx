@@ -1,6 +1,4 @@
 import React from 'react'
-import editar from './imagens/editar.png';
-import excluir from './imagens/excluir.png';
 
 
 function TabelaDeParceiros(props) {

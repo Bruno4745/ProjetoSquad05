@@ -146,3 +146,34 @@ CREATE TABLE `faleconosco` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+CREATE TABLE cidades_grupos(
+    id_cidades_grupos int NOT NULL AUTO_INCREMENT,
+    cidades varchar(50),
+     PRIMARY KEY (id_cidades_grupos)
+    )ENGINE=InnoDB CHARSET=utf8;
+    
+
+
+
+
+SELECT cidades_grupos.cidades, parceiros.nome,parceiros.logradouro,parceiros.numero,parceiros.complemento,parceiros.cidade,parceiros.cep,parceiros.telefone,parceiros.site
+FROM cidades_grupos
+INNER JOIN parceiros
+ON cidades_grupos.id_cidades_grupos = parceiros.id_parceiros;
+
+
+
+
+INSERT INTO `cidades_grupos ` VALUES (1,'Americana'),(2,'Andradina') (3,'Araras'),(4,'Atibaia'),(5,'Bauru'),(6,'Bertioga'),(7,'Birigui'),(8,'Cachoeira Paulista'),(9,'Capivari'),(10,'Carapicuíba');
+DROP TABLE IF EXISTS `faleconosco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faleconosco` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  `mensagem` varchar(45) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;

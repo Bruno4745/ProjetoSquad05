@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Table } from "react-bootstrap";
+import { Container, Button, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceirosAdm";
 import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
