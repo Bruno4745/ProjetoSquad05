@@ -6,7 +6,10 @@
 
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
 
-        $sql = "SELECT * FROM parceiros;";
+        $sql = "SELECT cidades_grupos.cidades, parceiros.nome,parceiros.logradouro,parceiros.numero,parceiros.complemento,parceiros.cidade,parceiros.cep,parceiros.telefone,parceiros.site
+        FROM cidades_grupos
+        INNER JOIN parceiros
+        ON cidades_grupos.id_cidades_grupos = parceiros.id_parceiros;";
         $resultado = query($sql);
         $parceiro = [];
 
