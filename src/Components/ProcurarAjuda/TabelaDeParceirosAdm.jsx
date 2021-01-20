@@ -9,8 +9,8 @@ function TabelaDeParceiros(props) {
         <td>{props.nome}</td>
         <td>{props.cidade}</td>
         <td>{props.telefone}</td>
-        <td><a href={`http://localhost/ProjetoSquad05/php/api/alterarparceiro.php?id=${props.id}`}><img src={editar} alt="Editar" width="30px"></img></a>{' '}
-        <a href={`http://localhost/ProjetoSquad05/php/api/excluirparceiro.php?id=${props.id}`}><img src={excluir} alt="Excluir" width="30px"></img></a></td>
+        <td className="text-center"><a className="mr-2" href={`http://localhost/ProjetoSquad05/php/api/alterarparceiro.php?id=${props.id}`}><img src={editar} alt="Editar" width="25px"></img></a>{' '}
+        <a href={`http://localhost/ProjetoSquad05/php/api/excluirparceiro.php?id=${props.id}`}><img src={excluir} alt="Excluir" width="25px"></img></a></td>
       </tr>
   );
 };

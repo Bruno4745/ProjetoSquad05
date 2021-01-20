@@ -26,9 +26,9 @@ const ProcurarAjuda = () => {
         <thead>
           <tr>
             <th>Parceiro</th>
-            <th>Endereço</th>
+            <th>Cidade</th>
             <th>Telefone</th>
-            <th>Acao</th>
+            <th>Ação</th>
           </tr>
         </thead>
         <tbody>
