@@ -29,15 +29,15 @@ const Depoimentos = () => {
     return(
         <Container>
             <Form onSubmit={enviaDepoimento} className="my-4">
-                <h2>Deixe seu depoimento!!!</h2>
+                <h2>Conte sua história</h2>
                 <Form.Group>
-                    <Form.Control id="depoimento" name="depoimento" className="mb-3" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" required />
+                    <Form.Control id="depoimento" name="depoimento" className="mb-3" as="textarea" rows={5} placeholder="Gostaria de compartilhar conosco como foi o seu processo de adoção?" required />
                 </Form.Group>
                 <Form.Group>
                     <Button type="submit">Enviar</Button>
                 </Form.Group>
             </Form>
-            <h2>Depoimentos enviados:</h2>
+            <h2>Nossas histórias</h2>
             {depoimentos && depoimentos.map(item => <Depoimento key={item.id_depoimentos} id={item.id_depoimentos} depoimento={item.depoimento}/>)}
         </Container>
     )

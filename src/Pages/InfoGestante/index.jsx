@@ -4,7 +4,7 @@ import { Jumbotron, Container, Accordion, Card } from "react-bootstrap";
 const GestanteMae = () => {
   return (
     <div>
-      <Jumbotron fluid>
+      <Jumbotron fluid id="jumbotron">
         <Container>
           <h1> Informações à Gestante/Mãe </h1>
           <br></br>
@@ -18,7 +18,7 @@ const GestanteMae = () => {
       </Jumbotron>
       <div>
         <Container>
-          <Accordion defaultActiveKey="0">
+          <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <h6>

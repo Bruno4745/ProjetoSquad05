@@ -48,7 +48,7 @@ const Home = () => {
           </Carousel>
         </div>
 
-        <Jumbotron fluid>
+        <Jumbotron fluid id="jumbotron">
           <Container>
             <center>
               <h2> É SOBRE SALVAR VIDAS E ENTREGAR RECOMEÇOS E ESPERANÇAS </h2>
@@ -66,7 +66,7 @@ const Home = () => {
           </Container>
         </Jumbotron>
 
-        <Card style={{ width: "70rem" }}>
+        <Card>
           <Card.Img variant="top" src="" />
           <Card.Body>
             <Card.Title>Problemática & Projeto de Solução</Card.Title>

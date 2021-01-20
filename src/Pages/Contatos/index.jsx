@@ -14,7 +14,7 @@ const Contatos = () => {
     return (
       <Container>
         <div className="my-4">
-          <h2>Contatos</h2>
+          <h2>Contato</h2>
           <Form onSubmit={enviaMensagem} className="my-4">
             <Form.Group controlId="nome">
               <Form.Label>Nome: </Form.Label>
@@ -26,7 +26,7 @@ const Contatos = () => {
             </Form.Group>
             <Form.Group controlId="mensagem">
               <Form.Label>Mensagem: </Form.Label>
-              <Form.Control name="mensagem" as="textarea" rows={3} />
+              <Form.Control name="mensagem" as="textarea" rows={3} placeholder="Críticas/sugestões/dúvidas de como ser um parceiro?" />
             </Form.Group>
             <Button variant="primary" type="submit">Enviar</Button>
           </Form>

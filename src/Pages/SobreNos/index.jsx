@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Squad from "../../Components/SobreNos";
 import { Jumbotron, Container, Row } from "react-bootstrap";
+import '../jumbotron.css'
 
 export default function SobreNos() {
   const [squad, setSquad] = useState([]);
@@ -17,7 +18,7 @@ export default function SobreNos() {
 
   return (
     <Container>
-      <Jumbotron>
+      <Jumbotron id="jumbotron">
         <h1>Sobre Nós</h1>
       </Jumbotron>
       <h2>Quem Somos</h2>

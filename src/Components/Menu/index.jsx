@@ -22,7 +22,7 @@ const Menu = () => {
                             {/* <Nav.Link as={Link} href="/informativo" to="/informativo">Informativo</Nav.Link> */}
                             <Nav.Link as={Link} href="/procurarAjuda" to="/procurarAjuda">Onde Procurar Ajuda</Nav.Link>
                         <NavDropdown title="Fale Conosco">
-                            <NavDropdown.Item as={Link} href="/contatos" to="/contatos">Contatos</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/contatos" to="/contatos">Contato</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/denuncia" to="/denuncia">Denúncia</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/depoimentos" to="/depoimentos">Depoimentos</NavDropdown.Item>
                         </NavDropdown>

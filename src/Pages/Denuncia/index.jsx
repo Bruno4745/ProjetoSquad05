@@ -30,8 +30,8 @@ const Denuncia = () => {
               <Form.Control name="horario" type="text" />
             </Form.Group>
             <Form.Group controlId="mensagem">
-              <Form.Label>O que ocorreu? </Form.Label>
-              <Form.Control name="mensagem" as="textarea" rows={10} placeholder="Descreva como foi o atendimento" />
+              <Form.Label>O que ocorreu? (Ex. Negaram informação/Falaram que não tenho esse direito/Que é contra as normas de atendimento)</Form.Label>
+              <Form.Control name="mensagem" as="textarea" rows={4} placeholder="Descreva como foi o atendimento" />
             </Form.Group>
             
             <Button variant="primary" type="submit">Enviar</Button>

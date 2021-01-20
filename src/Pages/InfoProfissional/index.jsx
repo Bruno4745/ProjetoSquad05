@@ -4,7 +4,7 @@ import { Jumbotron, Container, Accordion, Card } from "react-bootstrap";
 const InfoProfissional = () => {
     return (
         <div>
-            <Jumbotron fluid>
+            <Jumbotron fluid id="jumbotron">
                 <Container>
                     <h1>Informações aos Profissionais</h1>
                     <br />
@@ -71,7 +71,7 @@ const InfoProfissional = () => {
                     <strong>Para garantir o direito da gestante de ser atendida prontamente pela Vara da Infância e Juventude, o Estatuto da Criança e do Adolescente prevê uma multa de R$ 1.000,00 a R$ 3.000,00 para o médico, enfermeiro, dirigente de estabelecimento de saúde, funcionário de programa oficial ou comunitário destinado à garantia do direito à convivência familiar que deixar de, imediatamente, encaminhar à autoridade judiciária caso de que tenha conhecimento, envolvendo mãe ou gestante interessada em entregar seu filho para adoção. (ECA, art. 258-B).</strong>
                 </p>
 
-                <Accordion defaultActiveKey="0">
+                <Accordion>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             <h6>
