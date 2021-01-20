@@ -4,7 +4,7 @@ import { Modal, Button, Form } from "react-bootstrap";
 function MyVerticallyCenteredModal(props) {
 
     const enviaParceiro = async (evento) => {
-        const url = "http://localhost/ProjetoSquad05/php/api/parceiro.php";
+        const url = "https://unfadable-air.000webhostapp.com/api/parceiro.php";
         const dados = new FormData(evento.target);
         await fetch(url, {
             method: "POST",
