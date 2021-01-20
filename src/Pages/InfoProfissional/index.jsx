@@ -9,7 +9,7 @@ const InfoProfissional = () => {
                     <h1>Informações aos Profissionais</h1>
                     <br />
                     <p>
-                        Aqui você vai encontrar orietações sobre a <strong>entrega legal</strong> aos profissionais independente da ocupação na rede de atendimento.
+                        Aqui você vai encontrar orietações sobre a <strong>entrega voluntária</strong> aos profissionais independente da ocupação na rede de atendimento.
                     </p>
                 </Container>
             </Jumbotron>

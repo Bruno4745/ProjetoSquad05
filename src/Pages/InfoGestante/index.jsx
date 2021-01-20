@@ -102,7 +102,7 @@ const GestanteMae = () => {
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="2">
                 <h6>
-                  <strong>Direitos da Gestante/Mae</strong>
+                  <strong>Direitos da Gestante/Mãe</strong>
                 </h6>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="2">
