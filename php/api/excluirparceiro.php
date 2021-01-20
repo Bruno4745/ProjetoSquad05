@@ -4,7 +4,12 @@
 
     if(isset($_GET['id'])){
         $id = $_GET['id'];
-        $sql = "SELECT * FROM parceiros WHERE id_parceiros = $id LIMIT 1";
+        $sql = "SELECT * FROM parceiros
+        INNER JOIN cidade_parceiros
+        ON parceiros.id_cidade = cidade_parceiros.idcidade_parceiros
+        INNER JOIN estado_parceiros
+        ON estado_parceiros.idestado_parceiros = parceiros.id_estado
+        WHERE parceiros.id_parceiros = $id LIMIT 1";
         $resultado = query($sql);
         while($row=mysqli_fetch_assoc($resultado)){
 ?>
@@ -70,7 +75,7 @@
                 </div>
                 <div class="form-group">
                     <label for="site">Site: </label>
-                    <input value="<?php echo $row['site'] ?>" type="text" class="form-control" id="site" name="site">
+                    <input value="<?php echo $row['site_parceiro'] ?>" type="text" class="form-control" id="site" name="site">
                 </div>
                 <button class="btn btn-danger mt-3" type="submit" name="botao" value="Excluir">Excluir</button>
                 <button class="btn btn-primary mt-3" type="submit" name="botao" value="Voltar">Voltar</button>

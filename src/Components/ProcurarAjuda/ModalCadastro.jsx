@@ -28,51 +28,51 @@ function MyVerticallyCenteredModal(props) {
           <Form onSubmit={enviaParceiro} >
             <Form.Group>
                 <Form.Label>Categoria: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="categoria"/>
+                <Form.Control type="text" name="categoria" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Nome: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="nome"/>
+                <Form.Control type="text" name="nome" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Logradouro: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="logradouro"/>
+                <Form.Control type="text" name="logradouro" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Numero: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="numero"/>
+                <Form.Control type="text" name="numero" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Complemento: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="complemento"/>
+                <Form.Control type="text" name="complemento" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Cidade: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="cidade"/>
+                <Form.Control type="text" name="cidade" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Estado: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="estado"/>
+                <Form.Control type="text" name="estado" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>CEP: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="cep"/>
+                <Form.Control type="text" name="cep" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Contato: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="contato"/>
+                <Form.Control type="text" name="contato" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Telefone: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu telefone" name="telefone"/>
+                <Form.Control type="text" name="telefone" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Email: </Form.Label>
-                <Form.Control type="email" placeholder="nome@email.com.br" name="email"/>
+                <Form.Control type="email" name="email" required/>
             </Form.Group>
             <Form.Group>
                 <Form.Label>Site: </Form.Label>
-                <Form.Control type="text" placeholder="Digite seu nome" name="site"/>
+                <Form.Control type="text" name="site" required/>
             </Form.Group>
                 <Button variant="primary" type="submit">Enviar</Button>
           </Form>
