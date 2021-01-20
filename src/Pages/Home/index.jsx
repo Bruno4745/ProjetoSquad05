@@ -97,7 +97,7 @@ const Home = () => {
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  SOBRE A ENTREGA LEGAL
+                  SOBRE A ENTREGA VOLUNTÁRIA
                 </button>
               </h2>
               <div
@@ -162,7 +162,7 @@ const Home = () => {
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  SOBRE BASES LEGAIS
+                   O QUE DIZ A LESGILAÇÃO?
                 </button>
               </h2>
               <div

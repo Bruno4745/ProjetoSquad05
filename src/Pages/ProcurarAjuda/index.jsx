@@ -3,6 +3,7 @@ import { Container, Form, Button, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
 import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
+import Filtro from "../../Components/ProcurarAjuda/Filtro";
 
 const ProcurarAjuda = () => {
   const [parceiros, setParceiros] = useState([]);
@@ -44,6 +45,7 @@ const ProcurarAjuda = () => {
           </Table>
       </div>         
       <ModalCadastro/>
+      < Filtro/>
     </Container>
   );
 };
