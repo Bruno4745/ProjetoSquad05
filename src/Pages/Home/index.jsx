@@ -7,11 +7,8 @@ const Home = () => {
   return (
     <Container fluid>
 
-      <Row>
-        <Col md={12}>
           <Carousel/>
-        </Col>
-      </Row>
+    
 
 
       <Container className="gambiarraNaHome">

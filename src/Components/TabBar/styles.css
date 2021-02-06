@@ -1,0 +1,24 @@
+#colTab{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+ 
+}
+
+#navTab{
+  float: left;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.navlink{
+  text-decoration: none;
+  color: #952790;
+
+}
+
+.navlink:hover{
+  color: #ffe76d;
+}

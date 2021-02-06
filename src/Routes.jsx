@@ -8,6 +8,7 @@ import GestanteMae from './Pages/InfoGestante/'
 import InfoProfissional from './Pages/InfoProfissional'
 import ProcurarAjuda from './Pages/ProcurarAjuda/index'
 import ProcurarAjudaAdm from './Pages/ProcurarAjuda/adm'
+import FaleConosco from './Pages/FaleConosco'
 import SobreNos from './Pages/SobreNos'
 import Legislacao from './Pages/Legislacao'
 const Routes = () => {
@@ -18,11 +19,12 @@ const Routes = () => {
             <Route exact path='/profissional' component={InfoProfissional} />
             <Route exact path='/procurarAjuda' component={ProcurarAjuda} />
             <Route exact path='/procurarAjudaAdm' component={ProcurarAjudaAdm} />
-            <Route exact path='/depoimentos' component={Depoimentos} />
+            {/* <Route exact path='/depoimentos' component={Depoimentos} />
             <Route exact path='/contatos' component={Contatos} />
-            <Route exact path='/denuncia' component={Denuncia} />
+            <Route exact path='/denuncia' component={Denuncia} /> */}
             <Route exact path='/sobrenos' component={SobreNos} />
             <Route exact path='/legislacao' component={Legislacao} />
+            <Route exact path='/faleConosco' component={FaleConosco} />
         </Switch>
     )
 }
