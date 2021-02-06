@@ -1,112 +1,71 @@
 import React from 'react';
-import { Jumbotron, Container, Card} from "react-bootstrap";
-import Carousel from 'react-bootstrap/Carousel';
-
-import a1 from './a1.jpg'
-import a2 from './a2.jpg'
-import a3 from './a3.jpg'
-import a4 from './a4.jpg'
+import { Jumbotron, Container, Card, Row, Col } from "react-bootstrap";
+import Carousel from '../../Components/Carousel/Carousel';
+import CarouselComCards from '../../Components/Carousel/CarouselComCards';
 
 const Home = () => {
-    return (
-      <div>
-        <div className="carrossel">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={a4}
-                width="50"
-                alt="Third slide"
-              />
-            </Carousel.Item>
+  return (
+    <Container fluid>
 
-            <Carousel.Item interval={1000}>
-              <img
-                className="d-block w-100"
-                src={a1}
-                width="50"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item interval={500}>
-              <img
-                className="d-block w-100"
-                src={a2}
-                width="50"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={a3}
-                width="50"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-        </div>
+      <Row>
+        <Col md={12}>
+          <Carousel/>
+        </Col>
+      </Row>
 
-        <Jumbotron fluid id="jumbotron">
-          <Container>
-            <center>
-              <h2> É SOBRE SALVAR VIDAS E ENTREGAR RECOMEÇOS E ESPERANÇAS </h2>
-            </center>
-            <br></br>
-            <p>
-              Aspiramos que mesmo diante do desespero, nenhuma mulher decida
-              pelo abandono do recém-nascido, mas que procure os serviços
-              existentes e seja bem e prontamente atendida, num ambiente capaz
-              de lhe oferecer o acolhimento adequado, protegida de toda forma de
-              discriminação e preconceito.
-            </p>
 
-            <p></p>
-          </Container>
-        </Jumbotron>
+      <Container className="gambiarraNaHome">
 
-        <Card>
-          <Card.Img variant="top" src="" />
-          <Card.Body>
-            <Card.Title>Problemática & Projeto de Solução</Card.Title>
-            <Card.Text>
-              No Brasil, não é raro noticiários divulgando casos de abandono de
-              bebês (em latas de lixos, matagais, rios, entre outros),
-              negociações financeiras e ou entrega ilegal de bebês,
-              infanticídios, abortos clandestinos (com risco de morte para a
+        <Row>
+          <Col md={12}>
+            <Jumbotron fluid id="jumbotron">
+
+              <center>
+                <h2> É SOBRE SALVAR VIDAS E ENTREGAR RECOMEÇOS E ESPERANÇAS </h2>
+              </center>
+              <br></br>
+              <p>
+                Aspiramos que mesmo diante do desespero, nenhuma mulher decida
+                pelo abandono do recém-nascido, mas que procure os serviços
+                existentes e seja bem e prontamente atendida, num ambiente capaz
+                de lhe oferecer o acolhimento adequado, protegida de toda forma de
+                discriminação e preconceito.
+              </p>
+
+            </Jumbotron>
+          </Col>
+        </Row>
+
+
+        <Row>
+          <Col md={4}>
+
+            <Card>
+              <Card.Img variant="top" src="" />
+              <Card.Body>
+                <Card.Title>Problemática & Projeto de Solução</Card.Title>
+                <Card.Text>
+                  No Brasil, não é raro noticiários divulgando casos de abandono de
+                  bebês (em latas de lixos, matagais, rios, entre outros),
+                  negociações financeiras e ou entrega ilegal de bebês,
+                  infanticídios, abortos clandestinos (com risco de morte para a
               mulher). Diante deste cenário a Squad 5 desenvolveu o projeto{" "}
-              <strong>“Recomeçar”</strong> que tem como propósito trazer
+                  <strong>“Recomeçar”</strong> que tem como propósito trazer
               melhorias tecnológicas ao processo de Entrega Voluntária para
               Adoção (prevista em lei), além de disseminar e propagar campanhas
               de marketing com o intuito de combater o preconceito e o
               julgamento deste assunto tão importante.
             </Card.Text>
-          </Card.Body>
-        </Card>
+              </Card.Body>
+            </Card>
+          </Col>
 
-        <main className="my-4">
-          <div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  SOBRE A ENTREGA VOLUNTÁRIA
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
+          <Col md={4}>
+            <Card>
+              <Card.Img variant="top" src="" />
+              <Card.Body>
+                <Card.Title>SOBRE A ENTREGA VOLUNTÁRIA</Card.Title>
+                <Card.Text>
                   <p>
                     O acolhimento profissional à gestante que indica a intenção
                     de entregar o filho em adoção constitui o primeiro passo
@@ -149,29 +108,18 @@ const Home = () => {
                     futuramente, podem gerar denúncias graves de maus tratos ao
                     conselho tutelar.
                   </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                   O QUE DIZ A LESGILAÇÃO?
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4}>
+            <Card>
+              <Card.Img variant="top" src="" />
+              <Card.Body>
+                <Card.Title>O QUE DIZ A LESGILAÇÃO?</Card.Title>
+                <Card.Text>
+
                   <p>
                     A Constituição Federal de 1988 garante, dentro dos
                     princípios da dignidade da pessoa humana e da paternidade
@@ -259,13 +207,29 @@ const Home = () => {
                     contado da data de prolação da sentença de extinção do poder
                     familiar.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
-    );
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+
+        <Row>
+          <Col md={12}>
+            <Jumbotron fluid id="jumbotron">
+
+              <center>
+                <CarouselComCards/>
+              </center>
+
+
+            </Jumbotron>
+          </Col>
+        </Row>
+
+      </Container>
+    </Container>
+  );
 };
 
 export default Home;
