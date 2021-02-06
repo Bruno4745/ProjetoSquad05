@@ -9,9 +9,9 @@ import InfoProfissional from './Pages/InfoProfissional'
 import ProcurarAjuda from './Pages/ProcurarAjuda/index'
 import ProcurarAjudaAdm from './Pages/ProcurarAjuda/adm'
 import SobreNos from './Pages/SobreNos'
-
+import Legislacao from './Pages/Legislacao'
 const Routes = () => {
-    return(
+    return (
         <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/gestantemae' component={GestanteMae} />
@@ -22,7 +22,7 @@ const Routes = () => {
             <Route exact path='/contatos' component={Contatos} />
             <Route exact path='/denuncia' component={Denuncia} />
             <Route exact path='/sobrenos' component={SobreNos} />
-
+            <Route exact path='/legislacao' component={Legislacao} />
         </Switch>
     )
 }
