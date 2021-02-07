@@ -14,7 +14,7 @@ const Menu = () => {
                     <img
                         style={{ boxShadow: "0 0 1em", borderRadius: "50px" }}
                         width="100px"
-                        //src={logo}
+                        src={logo}
                         className="d-inline-block align-top"
                         alt="Logo Recomecar"
                     />

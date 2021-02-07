@@ -1,19 +1,19 @@
-.body{
+/* .body{
   padding:0;
   margin: 0;
   font-family: sans-serif;
   overflow: hidden;
-}
+} */
 .banner1, .banner2, .banner3, .banner4{
   height:70vh;
   width:100%;
   position:absolute;
   left:0;
-  top:0;
+  top:100px;
 }
 
-img{
-  width:120%;
+.img-carousel{
+  width:100%;
   position: absolute;
   left:50%;
   top: 50%;
@@ -162,5 +162,5 @@ img{
   border: 1px solid rgb(209, 60, 172);
 }
 .gambiarraNaHome{
-  margin-top:55%;
+  margin-top:45%;
 }
