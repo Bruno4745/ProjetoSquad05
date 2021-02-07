@@ -114,96 +114,35 @@ const Home = () => {
             <Card>
               <Card.Img variant="top" src="" />
               <Card.Body>
-                <Card.Title>O QUE DIZ A LESGILAÇÃO?</Card.Title>
+                <Card.Title>É CRIME!!</Card.Title>
                 <Card.Text>
 
                   <p>
-                    A Constituição Federal de 1988 garante, dentro dos
-                    princípios da dignidade da pessoa humana e da paternidade
-                    responsável, o direito ao planejamento familiar (CF, art.
-                    226, § 7º).
+                  Pratique aborto clandestino e, portanto, ilegal,
+                        correndo sérios riscos de vida e, inclusive, de
+                        responder a processo criminal;
                   </p>
                   <p>
-                    Por sua vez, a Lei nº 9.263, de 1996 (art. 3º), prevê que o
-                    planejamento familiar integra o conjunto de ações à mulher,
-                    ao homem ou ao casal.
+                  Abandone o filho recém-nascido, podendo causar a morte
+                        da criança, sonegando-lhe, assim, o direito à vida,
+                        hipótese em que também responderá criminalmente;
                   </p>
                   <p>
-                    Nossa Constituição também estabelece que é dever da família,
-                    da sociedade e do Estado assegurar à criança, com prioridade
-                    absoluta, diversos direitos, dentre eles, o direito à vida e
-                    de ser colocada a salvo de toda forma de negligência,
-                    violência ou crueldade. (CF, art. 227).
+                  Entregue (de forma gratuita ou negociada) o filho
+                        recém-nascido a pessoas estranhas, sem laços de
+                        parentesco, geralmente despreparadas, sem projeto de
+                        adoção e que, por vezes, escondem da criança a própria
+                        história. Esse procedimento também pode configurar
+                        crime;
                   </p>
                   <p>
-                    O Estatuto da Criança e do Adolescente – ECA (Lei nº 8.969,
-                    de 1990) – Art. 7º – A criança e o adolescente têm direito a
-                    proteção à vida e à saúde, mediante a efetivação de
-                    políticas sociais públicas que permitam o nascimento e o
-                    desenvolvimento sadio e harmonioso, em condições dignas de
-                    existência.
+                  Contribua para que o sistema legal de adoção seja
+                        totalmente desrespeitado, burlando-se a ordem
+                        cronológica do Sistema Nacional de Adoção e culminando
+                        com as denominadas “adoções à brasileira”, “adoção
+                        direta”, “adoção intuito personae” ou “adoção dirigida”.
                   </p>
-                  <p>
-                    § 5º – A assistência referida no § 4º deste artigo deverá
-                    ser prestada também a gestantes e mães que manifestem
-                    interesse em entregar seus filhos para adoção, bem como a
-                    gestantes e mães que se encontrem em situação de privação de
-                    liberdade.
-                  </p>
-                  <p>
-                    A recente Lei nº 13.509, de 2017 - que alterou e inovou o
-                    ECA – trouxe importantes regras sobre o que denominamos
-                    “Entrega Legal”, destacando-se as seguintes:
-                  </p>
-                  <p>
-                    Art. 19-A – A gestante ou mãe que manifeste interesse em
-                    entregar seu filho para adoção, antes ou logo após o
-                    nascimento, será encaminhada à Justiça da Infância e da
-                    Juventude.
-                  </p>
-                  <p>
-                    § 1º – A gestante ou mãe será ouvida pela equipe
-                    interprofissional da Justiça da Infância e da Juventude, que
-                    apresentará relatório à autoridade judiciária, considerando
-                    inclusive os eventuais efeitos do estado gestacional e
-                    puerperal.
-                  </p>
-                  <p>
-                    § 2º – De posse do relatório, a autoridade judiciária poderá
-                    determinar o encaminhamento da gestante ou mãe, mediante sua
-                    expressa concordância, à rede pública de saúde e assistência
-                    social para atendimento especializado.
-                  </p>
-                  <p>
-                    § 5º – Após o nascimento da criança, a vontade da mãe ou de
-                    ambos os genitores, se houver pai registral ou pai indicado,
-                    deve ser manifestada na audiência a que se refere o § 1º do
-                    art. 166 desta Lei, garantido o sigilo sobre a entrega.
-                  </p>
-                  <p>
-                    § 8º – Na hipótese de desistência pelos genitores -
-                    manifestada em audiência ou perante a equipe
-                    interprofissional - da entrega da criança após o nascimento,
-                    a criança será mantida com os genitores, e será determinado
-                    pela Justiça da Infância e da Juventude o acompanhamento
-                    familiar pelo prazo de 180 (cento e oitenta) dias.
-                  </p>
-                  <p>
-                    § 9º – É garantido à mãe o direito ao sigilo sobre o
-                    nascimento, respeitado o disposto no art. 48 desta Lei.
-                  </p>
-                  <p>
-                    Art – 166, § 3º – São garantidos a livre manifestação de
-                    vontade dos detentores do poder familiar e o direito ao
-                    sigilo das informações.
-                  </p>
-                  <p>
-                    § 5º – O consentimento é retratável até a data da realização
-                    da audiência especificada no § 1º deste artigo, e os pais
-                    podem exercer o arrependimento no prazo de 10 (dez) dias,
-                    contado da data de prolação da sentença de extinção do poder
-                    familiar.
-                  </p>
+                  
                 </Card.Text>
               </Card.Body>
             </Card>

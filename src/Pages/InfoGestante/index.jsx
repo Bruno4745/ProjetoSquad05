@@ -178,52 +178,6 @@ const GestanteMae = () => {
               </Accordion.Collapse>
             </Card>
 
-            <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="3">
-                <h6>
-                  <strong>É Crime!</strong>
-                </h6>
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="3">
-                <Card.Body>
-                  <ul>
-                    <li>
-                      <p>
-                        Pratique aborto clandestino e, portanto, ilegal,
-                        correndo sérios riscos de vida e, inclusive, de
-                        responder a processo criminal;
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Abandone o filho recém-nascido, podendo causar a morte
-                        da criança, sonegando-lhe, assim, o direito à vida,
-                        hipótese em que também responderá criminalmente;
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Entregue (de forma gratuita ou negociada) o filho
-                        recém-nascido a pessoas estranhas, sem laços de
-                        parentesco, geralmente despreparadas, sem projeto de
-                        adoção e que, por vezes, escondem da criança a própria
-                        história. Esse procedimento também pode configurar
-                        crime;
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Contribua para que o sistema legal de adoção seja
-                        totalmente desrespeitado, burlando-se a ordem
-                        cronológica do Sistema Nacional de Adoção e culminando
-                        com as denominadas “adoções à brasileira”, “adoção
-                        direta”, “adoção intuito personae” ou “adoção dirigida”.
-                      </p>
-                    </li>
-                  </ul>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
 
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="4">
