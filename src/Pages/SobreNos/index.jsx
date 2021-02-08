@@ -32,10 +32,10 @@ export default function SobreNos() {
      
       <Row className='mt-5'>
         
-        <Col md={4}>
+        <Col md={5}>
           <img className='mx-5' src={about} style={{width:"100%"}} alt=""/>
         </Col>
-        <Col md={8}>
+        <Col md={7}>
 
           <Row className='mx-5'>
             <h2>Quem Somos</h2>
