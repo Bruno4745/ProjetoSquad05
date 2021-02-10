@@ -14,23 +14,9 @@ const Contatos = () => {
         });
     }
     return (
-      <Container fluid>
-        
-        <Row>
-          <Col md={12}>
-              
-            {/* Não está comportando como esperado, ficando acima do conteudo */}
-
-            {/* <BannerFaleConosco /> */}
-                      
-          </Col>
-        </Row>
-      
-        
-      <Container>
-        <div className="my-4">
+      <>
           <h2>Contatos</h2>
-          <Form onSubmit={enviaMensagem} className="my-4">
+          <Form onSubmit={enviaMensagem} className="my-2">
             <Form.Group controlId="nome">
               <Form.Label>Nome: </Form.Label>
               <Form.Control name="nome" type="text" placeholder="Digite seu nome" />
@@ -45,9 +31,8 @@ const Contatos = () => {
             </Form.Group>
             <Button variant="primary" type="submit">Enviar</Button>
           </Form>
-        </div>
-      </Container>
-      </Container>
+      
+      </>
     );
 };
 

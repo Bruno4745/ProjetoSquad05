@@ -8,9 +8,7 @@ const Home = () => {
     <Container fluid>
 
           <Carousel/>
-    
-
-
+   
       <Container className="gambiarraNaHome">
 
         <Row>

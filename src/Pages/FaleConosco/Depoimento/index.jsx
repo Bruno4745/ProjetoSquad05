@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import Depoimento from '../../../Components/Depoimento';
+import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
 
 const Depoimentos = () => {
 
@@ -27,11 +28,11 @@ const Depoimentos = () => {
     }, []);
 
     return(
-        <Container>
-            <Form onSubmit={enviaDepoimento} className="my-4">
-                <h2>Deixe seu depoimento!!!</h2>
+        <>
+            <h2>Deixe seu depoimento!</h2>
+            <Form onSubmit={enviaDepoimento}>
                 <Form.Group>
-                    <Form.Control id="depoimento" name="depoimento" className="mb-3" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" required />
+                    <Form.Control id="depoimento" name="depoimento" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" required />
                 </Form.Group>
                 <Form.Group>
                     <Button type="submit">Enviar</Button>
@@ -39,7 +40,7 @@ const Depoimentos = () => {
             </Form>
             <h2>Depoimentos enviados:</h2>
             {depoimentos && depoimentos.map(item => <Depoimento key={item.id_depoimentos} id={item.id_depoimentos} depoimento={item.depoimento}/>)}
-        </Container>
+        </>
     )
 };
 

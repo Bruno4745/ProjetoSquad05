@@ -6,10 +6,11 @@
 } */
 .banner1, .banner2, .banner3, .banner4{
   height:70vh;
-  width:100%;
+  width:100vw;
   position:absolute;
   left:0;
-  top:100px;
+  top:50px;
+  
 }
 
 .img-carousel{
@@ -19,6 +20,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   animation: zoom-out 3s linear infinite;
+
 
 }
 @keyframes zoom-out{

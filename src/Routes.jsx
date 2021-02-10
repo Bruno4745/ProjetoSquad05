@@ -1,8 +1,5 @@
 import { Switch, Route } from 'react-router-dom'
 
-import Denuncia from './Pages/Denuncia'
-import Depoimentos from './Pages/Depoimentos'
-import Contatos from './Pages/Contatos'
 import Home from './Pages/Home'
 import GestanteMae from './Pages/InfoGestante/'
 import InfoProfissional from './Pages/InfoProfissional'
@@ -19,9 +16,6 @@ const Routes = () => {
             <Route exact path='/profissional' component={InfoProfissional} />
             <Route exact path='/procurarAjuda' component={ProcurarAjuda} />
             <Route exact path='/procurarAjudaAdm' component={ProcurarAjudaAdm} />
-            {/* <Route exact path='/depoimentos' component={Depoimentos} />
-            <Route exact path='/contatos' component={Contatos} />
-            <Route exact path='/denuncia' component={Denuncia} /> */}
             <Route exact path='/sobrenos' component={SobreNos} />
             <Route exact path='/legislacao' component={Legislacao} />
             <Route exact path='/faleConosco' component={FaleConosco} />

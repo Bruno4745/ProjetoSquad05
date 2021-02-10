@@ -27,15 +27,8 @@ const Menu = () => {
                             <NavDropdown.Item as={Link} href="/gestanteMae" to="/gestanteMae">Gestante/Mãe</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/profissional" to="/profissional">Profissional</NavDropdown.Item>
                         </NavDropdown>
-                        {/* <Nav.Link as={Link} href="/informativo" to="/informativo">Informativo</Nav.Link> */}
                         <Nav.Link as={Link} href="/procurarAjuda" to="/procurarAjuda">Onde Procurar Ajuda</Nav.Link>
                         <Nav.Link as={Link} href="/faleConosco" to="/faleConosco">Fale Conosco</Nav.Link>
-
-                        {/* <NavDropdown as={Link} href="/profissional" to="/profissional" title="Fale Conosco">
-                            <NavDropdown.Item as={Link} href="/contatos" to="/contatos">Contato</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} href="/denuncia" to="/denuncia">Denúncia</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} href="/depoimentos" to="/depoimentos">Depoimentos</NavDropdown.Item>
-                        </NavDropdown> */}
                         <Nav.Link as={Link} href="/legislacao" to="/legislacao">Legislação</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
