@@ -9,21 +9,13 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-         <Menu /> 
-        <main>
-          <Container>
-            <Routes />
-          </Container>
-        </main>
+      <Menu />
+      <main>
         <Container>
-          <div>
-            <footer>
-              <Footer />
-            </footer>
-          </div>
+          <Routes />
         </Container>
-      </div>
+      </main>
+      <Footer />
     </BrowserRouter>
   );
 }

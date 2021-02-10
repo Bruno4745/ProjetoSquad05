@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Table } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
 import ModalLogin from "../../Components/ProcurarAjuda/Login";
@@ -21,28 +21,17 @@ const ProcurarAjuda = () => {
 
   return (
     <Container>
-      <div>
-        <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Parceiro</th>
-            <th>Cidade</th>
-            <th>Telefone</th>
-          </tr>
-        </thead>
-        <tbody>
-         {parceiros && parceiros.map(item => (
-              <TabelaDeParceiros 
-                key={item.id_parceiros}
-                id={item.id_parceiros}
-                nome={item.nome}
-                cidade ={item.cidade}
-                telefone = {item.telefone}/>
-            ))}
-            </tbody>
-          </Table>
-      </div>         
-    <ModalLogin/>
+      <Row>
+        {parceiros && parceiros.map(item => (
+          <TabelaDeParceiros
+            key={item.id_parceiros}
+            id={item.id_parceiros}
+            nome={item.nome}
+            cidade={item.cidade}
+            telefone={item.telefone} />
+        ))}
+      </Row>
+      <ModalLogin/>
     </Container>
   );
 };
