@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap'
 import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
 
 const Denuncia = () => {
 
+  // Definindo um state vazio
+  const [dadosForm, setDadosForm] = useState({
+    nome_do_estabelecimento: '',
+    endereco: '',
+    horario: '',
+    mensagem: ''
+  })
+
+  // Inserindo os valores no state
+  function handleChange(evento){
+      dadosForm[evento.target.name] = evento.target.value;
+      console.log(dadosForm);
+  }
+
     const enviaDenuncia = async (evento) => {
-        const url = "http://localhost/ProjetoSquad05/php/api/denuncia.php";
-        const dados = new FormData(evento.target);
+        const url = "http://localhost:5000/faleconosco/denuncia";
         await fetch(url, {
-            method: "POST",
-            body: dados
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(dadosForm)
         });
     }
 
@@ -20,19 +36,19 @@ const Denuncia = () => {
           <Form onSubmit={enviaDenuncia} className="my-2">
             <Form.Group controlId="nome">
               <Form.Label>Nome do estabelecimento: </Form.Label>
-              <Form.Control name="nome_do_estabelecimento" type="text" placeholder="Ex. Hospital/UBS/UPA" />
+              <Form.Control name="nome_do_estabelecimento" type="text" placeholder="Ex. Hospital/UBS/UPA" onChange={handleChange} />
             </Form.Group>
             <Form.Group controlId="endereco">
               <Form.Label>Endereço: </Form.Label>
-              <Form.Control name="endereco" type="endereco" placeholder="Ex. Rua..." />
+              <Form.Control name="endereco" type="endereco" placeholder="Ex. Rua..." onChange={handleChange} />
             </Form.Group>
             <Form.Group controlId="horario">
               <Form.Label>Horário do atendimento:</Form.Label>
-              <Form.Control name="horario" type="text" />
+              <Form.Control name="horario" type="text" onChange={handleChange} />
             </Form.Group>
             <Form.Group controlId="mensagem">
               <Form.Label>O que ocorreu? </Form.Label>
-              <Form.Control name="mensagem" as="textarea" rows={5} placeholder="Descreva como foi o atendimento" />
+              <Form.Control name="mensagem" as="textarea" rows={5} placeholder="Descreva como foi o atendimento" onChange={handleChange} />
             </Form.Group>
             
             <Button variant="primary" type="submit">Enviar</Button>

@@ -6,12 +6,25 @@ import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
 
 const Depoimentos = () => {
 
+    // Definindo um state vazio
+    const [dadosForm, setDadosForm] = useState({
+        depoimento: ''
+    })
+
+    // Inserindo os valores no state
+    function handleChange(evento){
+        dadosForm[evento.target.name] = evento.target.value;
+        console.log(dadosForm);
+    }
+
     const enviaDepoimento = async (evento) => {
-        const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
-        const dados = new FormData(evento.target);
+        const url = "http://localhost:5000/faleconosco/depoimento";
         await fetch(url, {
             method: "POST",
-            body: dados
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(dadosForm)
         });
     }
 
@@ -19,7 +32,7 @@ const Depoimentos = () => {
 
     useEffect(() => {
         async function fethData() {
-            const url = "http://localhost/ProjetoSquad05/php/api/depoimento.php";
+            const url = "http://localhost:5000/faleconosco/depoimento";
             const resposta = await fetch(url);
             const resultado = await resposta.json();
             setDepoimentos(resultado);
@@ -32,7 +45,7 @@ const Depoimentos = () => {
             <h2>Deixe seu depoimento!</h2>
             <Form onSubmit={enviaDepoimento}>
                 <Form.Group>
-                    <Form.Control id="depoimento" name="depoimento" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" required />
+                    <Form.Control id="depoimento" name="depoimento" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" onChange={handleChange} required />
                 </Form.Group>
                 <Form.Group>
                     <Button type="submit">Enviar</Button>

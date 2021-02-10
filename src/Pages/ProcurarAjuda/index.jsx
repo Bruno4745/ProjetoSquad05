@@ -10,7 +10,7 @@ const ProcurarAjuda = () => {
   useEffect(() => {
     async function fetchData() {
       const resposta = await fetch(
-        "https://unfadable-air.000webhostapp.com/api/parceiro.php"
+        "http://localhost:5000/procurarAjuda"
       );
       const dados = await resposta.json();
       setParceiros(dados);
