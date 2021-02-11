@@ -30,37 +30,38 @@ module.exports = (app) => {
         });
     });
     
-    // app.put('/procurarAjuda/:id' , (req, res) => {
+    app.put('/procurarAjuda/:id' , (req, res) => {
 
-    //     const id = req.params.id;
-    //     console.log(id);
+        const id = req.params.id;
+        //console.log(id);
+        const conteudo = req.body;
 
-    //     var connection = app.config.database();
-    //     var query = app.models.procurarAjudaModel;
+        var connection = app.config.database();
+        var query = app.models.procurarAjudaModel;
 
-    //     query.putProcurarAjuda(id, conteudo, connection, (err, result) => {
-    //         if(!err) {
-    //         res.json(result);
-    //         } else {
-    //         console.log(err);
-    //         };
-    //     });
-    // });
+        query.putProcurarAjuda(conteudo, id, connection, (err, result) => {
+            if(!err) {
+            res.json(result);
+            } else {
+            console.log(err);
+            };
+        });
+    });
 
-    // app.delete('/procurarAjuda/:id', (req, res) => {
+    app.delete('/procurarAjuda/:id', (req, res) => {
 
-    //     const id = req.params.id;
-    //     console.log(id);
+        const id = req.params.id;
+        //console.log(id);
 
-    //     var connection = app.config.database();
-    //     var query = app.models.procurarAjudaModel;
+        var connection = app.config.database();
+        var query = app.models.procurarAjudaModel;
 
-    //     query.deleteProcurarAjuda(id, connection, (err, result) => {
-    //         if(!err) {
-    //         res.json(result);
-    //         } else {
-    //         console.log(err);
-    //         };
-    //     });
-    // });
+        query.deleteProcurarAjuda(id, connection, (err, result) => {
+            if(!err) {
+            res.json(result);
+            } else {
+            console.log(err);
+            };
+        });
+    });
 };

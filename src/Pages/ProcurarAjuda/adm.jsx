@@ -36,9 +36,18 @@ const ProcurarAjuda = () => {
               <TabelaDeParceiros 
                 key={item.id_parceiros}
                 id={item.id_parceiros}
+                categoria={item.categoria}
                 nome={item.nome}
+                logradouro={item.logradouro}
+                numero={item.numero}
+                complemento={item.complemento}
                 cidade ={item.cidade}
-                telefone = {item.telefone}/>
+                estado={item.estado}
+                cep={item.cep}
+                contato={item.contato}
+                telefone = {item.telefone}
+                email={item.email}
+                site_parceiro={item.site_parceiro} />
             ))}
             </tbody>
           </Table>
