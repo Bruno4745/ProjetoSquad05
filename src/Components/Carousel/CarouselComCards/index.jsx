@@ -5,8 +5,8 @@ import './styles.css'
 
 const CarouselComCards = () => {
   return (
-    <div className="red h-100">
-      CarouselComCards 1
+   
+      
       <Carousel className="carousel">
 
         <Carousel.Item className="carousel-item">
@@ -88,7 +88,7 @@ const CarouselComCards = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </div>
+   
   )
 }
 

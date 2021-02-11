@@ -17,27 +17,27 @@ export default function SobreNos() {
   }, []);
 
   return (
-    <Container>
+    <Container style={{ color: "#952790" }}>
 
 
       <Row className>
         <Col md={12}>
-        
-            <h1>Sobre Nós</h1>
-      
+
+          <h1>Sobre Nós</h1>
+
         </Col>
       </Row>
 
 
-     
-      <Row className='mt-5'>
-        
-        <Col md={5}>
-          <img className='mx-5' src={about} style={{width:"100%"}} alt=""/>
-        </Col>
-        <Col md={7}>
 
-          <Row className='mx-5'>
+      <Row className='mt-2'>
+
+        <Col xs={12} sm={12} md={9} lg={6}>
+          <img src={about} style={{ width: "100%" }} alt="" />
+        </Col>
+        <Col xs={12} sm={12} md={9} lg={6}>
+
+          <Row style={sobreNosQuemSomos} >
             <h2>Quem Somos</h2>
             <p> Somos um grupo de estudante da Recode Pro, com formação em
             desenvolvimento Full Stack, e temos como objetivo atender a um dos
@@ -45,7 +45,7 @@ export default function SobreNos() {
           e bem-estar.</p>
           </Row>
 
-          <Row className='mx-5' >
+          <Row style={sobreNosQuemSomos}>
             <p>Para isso, optamos por disceminar sobre o direito a
             entrega voluntária, direito este resguardado em lei federal nº
             13.509/2017, chamada de “Lei da Adoção”, que trouxe alterações ao
@@ -56,17 +56,14 @@ export default function SobreNos() {
         </Col>
       </Row>
 
-      <Row style={SobreNos_div}>
+      <Row style={SobreNosJustificativa}>
 
-        <h2>Justificativas</h2>
+
         <Col md={6}>
+          <h2>Justificativas</h2>
           <li>Abandono de crianças recém-nascidas;</li>
-
           <li> A existência de grande número de adoções irregulares;</li>
         </Col>
-
-       
-
         <Col md={6}>
           <li>
             Pais que não querem ou não têm condições de cuidar de seus filhos, ao
@@ -80,7 +77,7 @@ export default function SobreNos() {
       </Row>
 
 
-      <Row className='mt-5' style={SobreNos_div2}>
+      <Row style={SobreNosObjetivos}>
 
         <h2>Objetivos</h2>
         <Col md={12}>
@@ -115,71 +112,78 @@ export default function SobreNos() {
       </Row>
 
 
-      
-     
-    
-      <Row className='mt-5'>
-        <Col md={7}>
+
+
+
+      <Row className='mt-2' style={SobreNosParceiros}>
+        <Col xs={12} sm={12} md={9} lg={6}>
 
           <Row>
-          <h2>Parceiros</h2>
-          <li>
-          Dr. antonio Carlos Berlini - Presidente da AGASESP - Associação dos
-          grupos de apoio à adoção do Estado de São Paulo
+            <h2>Parceiros</h2>
+            <li>
+              Dr. antonio Carlos Berlini - Presidente da AGASESP - Associação dos
+              grupos de apoio à adoção do Estado de São Paulo
         </li>
-        <li>Grupo de Apoio a Adoção de Mauá.</li>
+            <li>Grupo de Apoio a Adoção de Mauá.</li>
           </Row>
 
           <Row>
-          <li>
-          Madrinha do Projeto Sônia Borges - Somos eternamente gratos por nos
-          apresentar este tema, e por saber transmitir com tanto carinho o
-          conhecimento de um assunto tão delicado.
+            <li>
+              Madrinha do Projeto Sônia Borges - Somos eternamente gratos por nos
+              apresentar este tema, e por saber transmitir com tanto carinho o
+              conhecimento de um assunto tão delicado.
         </li>
           </Row>
 
         </Col>
-        <Col md={5}>
-        <img className='mt-5'  src={about} alt="" style={{width:"100%"}}/>
+        <Col xs={12} sm={12} md={9} lg={6}>
+          <img className='mt-5' src={about} alt="" style={{ width: "100%" }} />
         </Col>
-        
+
       </Row>
 
-        <h2>Mais Sobre Nós</h2>
+      <h2>Mais Sobre Nós</h2>
 
-        <Row className='w-100 mx-auto'>
-          {squad &&
-            squad.map((item) => (
-              <Squad
-                key={item.id_integrante}
-                id={item.id_integrante}
-                nome={item.nome}
-                foto={require(`${item.foto}`).default}
-                linkedin={item.linkedin}
-                github={item.github}
-                funcao={item.funcao}
-              />
-            ))}
-        </Row>
-    
+      <Row className='w-100 mx-auto'>
+        {squad &&
+          squad.map((item) => (
+            <Squad
+              key={item.id_integrante}
+              id={item.id_integrante}
+              nome={item.nome}
+              foto={require(`${item.foto}`).default}
+              linkedin={item.linkedin}
+              github={item.github}
+              funcao={item.funcao}
+            />
+          ))}
+      </Row>
+
     </Container>
   );
 }
 
-  
-  const SobreNos_div = {
-    padding: '10px',
-    borderTop:'6px solid #e6aee6',
-    borderRight:'6px solid #e6aee6',
-    marginTop: '30px',
-    boxShadow: '0px 0px 8px 2px #e6aee6'
+
+const sobreNosQuemSomos = {
+  borderRight: '6px solid #ffe76d',
+  borderRadius: '5px'
+}
+
+const SobreNosJustificativa = {
+  color: '#ffffff',
+  background: '#02977c',
+  margin: '10px 0',
+  padding: '10px',
+  borderRadius: '5px'
 };
 
-const SobreNos_div2 = {
- 
+const SobreNosObjetivos = {
+  margin: '10px 0',
   padding: '10px',
-  borderLeft:'6px solid #e6aee6',
-  borderBottom:'6px solid #e6aee6',
-  
-  
+  borderLeft: '6px solid #ffe76d',
+  borderRadius: '5px'
 };
+
+const SobreNosParceiros = {
+  margin: '10px 0',
+}

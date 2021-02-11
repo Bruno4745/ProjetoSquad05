@@ -5,7 +5,7 @@ import './styles.css'
 
 const CarouselComCards = () => {
   return (
-    <div className="body">
+    <>
     <div className="banner1">
     <img className="img-carousel" src={a4} />
         <div className="text-box text-box1">
@@ -45,7 +45,7 @@ const CarouselComCards = () => {
             labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
         </div>   
     </div>
-</div>
+</>
   )
 }
 

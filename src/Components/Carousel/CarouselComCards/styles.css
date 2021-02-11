@@ -1,12 +1,7 @@
-.red{
-  background: red;
-}
-.cyan{
-  background:cyan;
-}
 
 .carousel{
-  background: black;
+  background: #fff;
+  opacity: .50;
 }
 
 .carousel-item{

@@ -1,27 +1,20 @@
-/* .body{
-  padding:0;
-  margin: 0;
-  font-family: sans-serif;
-  overflow: hidden;
-} */
+
 .banner1, .banner2, .banner3, .banner4{
   height:70vh;
-  width:100vw;
+  min-height:350px;
+  width:100%;
   position:absolute;
   left:0;
-  top:50px;
-  
+  top: 116px;
 }
-
 .img-carousel{
   width:100%;
   position: absolute;
-  left:50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 120px;
+  top: 120px;
+  transform: translate(-120px, -120px);
   animation: zoom-out 3s linear infinite;
-
-
+  display: inline-block;
 }
 @keyframes zoom-out{
   100%{
@@ -30,21 +23,22 @@
 }
 
 .text-box{
-  width:600px;
+  width: 50%;
   position: absolute;
-  top: 200px;
-  left: 100px;
+  top: 2%;
+  left: 5%;
   color: #fff;
   animation: textup 12s linear infinite;
   transform: translateY(100px);
 }
 .text-box h1{
-  margin-bottom: 40px;
+  margin-bottom: 2px;
+  font-size: 2em;
 }
 .text-box p{
-  font-size: 18px;
-  line-height: 18px;
-  margin-top: 80px;
+  font-size: 1rem;
+  line-height:1.2rem;
+  margin-top: 10px;
 }
 .text-box span{
   background: rgb(243, 66, 219);
@@ -162,7 +156,4 @@
 .span{
   width: 100px;
   border: 1px solid rgb(209, 60, 172);
-}
-.gambiarraNaHome{
-  margin-top:45%;
 }

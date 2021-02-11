@@ -8,12 +8,12 @@ const Menu = () => {
     return (
         <Navbar className="navbar" variant="dark" fixed="top" expand="md" collapseOnSelect>
 
-            <Container>
+           
 
-                <Navbar.Brand as={Link} href="/" to="/">
+                <Navbar.Brand style={navBarMenu} as={Link} href="/" to="/">
                     <img
-                        style={{ boxShadow: "0 0 1em", borderRadius: "50px" }}
-                        width="100px"
+                        style={logoMenu}
+                        width="120px"
                         src={logo}
                         className="d-inline-block align-top"
                         alt="Logo Recomecar"
@@ -32,9 +32,22 @@ const Menu = () => {
                         <Nav.Link as={Link} href="/legislacao" to="/legislacao">Legislação</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
+           
         </Navbar>
     )
 }
 
 export default withRouter(Menu);
+
+const logoMenu = {
+    boxShadow: "0 0 1em",
+    borderRadius: "50%",
+    position: 'absolute',
+    left:'15%',
+    top:'25px',
+    opacity: 1,
+}
+const navBarMenu = {
+    height: '100px',
+
+}
