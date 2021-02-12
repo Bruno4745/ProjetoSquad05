@@ -52,8 +52,8 @@ function MyVerticallyCenteredModal(props) {
             Cadastrar Novo Parceiro
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={enviaParceiro} >
+        <Form onSubmit={enviaParceiro} >
+          <Modal.Body>
             <Form.Group>
                 <Form.Label>Categoria: </Form.Label>
                 <Form.Control type="text" name="categoria" onChange={handleChange} required/>
@@ -102,12 +102,12 @@ function MyVerticallyCenteredModal(props) {
                 <Form.Label>Site: </Form.Label>
                 <Form.Control type="text" name="site" onChange={handleChange} />
             </Form.Group>
-                <Button variant="primary" type="submit">Enviar</Button>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Fechar</Button>
-        </Modal.Footer>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="outline-primary" onClick={props.onHide}>Cancelar</Button>
+            <Button variant="outline-primary" type="submit">Cadastrar</Button>
+          </Modal.Footer>
+        </Form>
       </Modal>
     );
   }
