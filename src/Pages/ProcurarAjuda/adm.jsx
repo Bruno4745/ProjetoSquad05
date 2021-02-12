@@ -21,7 +21,6 @@ const ProcurarAjuda = () => {
 
   return (
     <Container>
-      <div>
         <Table striped bordered hover>
         <thead>
           <tr>
@@ -33,25 +32,24 @@ const ProcurarAjuda = () => {
         </thead>
         <tbody>
          {parceiros && parceiros.map(item => (
-              <TabelaDeParceiros 
-                key={item.id_parceiros}
-                id={item.id_parceiros}
-                categoria={item.categoria}
-                nome={item.nome}
-                logradouro={item.logradouro}
-                numero={item.numero}
-                complemento={item.complemento}
-                cidade ={item.cidade}
-                estado={item.estado}
-                cep={item.cep}
-                contato={item.contato}
-                telefone = {item.telefone}
-                email={item.email}
-                site_parceiro={item.site_parceiro} />
-            ))}
-            </tbody>
-          </Table>
-      </div>         
+            <TabelaDeParceiros 
+              key={item.id_parceiros}
+              id={item.id_parceiros}
+              categoria={item.categoria}
+              nome={item.nome}
+              logradouro={item.logradouro}
+              numero={item.numero}
+              complemento={item.complemento}
+              cidade ={item.cidade}
+              estado={item.estado}
+              cep={item.cep}
+              contato={item.contato}
+              telefone = {item.telefone}
+              email={item.email}
+              site_parceiro={item.site_parceiro} />
+          ))}
+          </tbody>
+        </Table>
       <ModalCadastro/>
       {' '}
       <Button href="https://projeto-squad05.vercel.app/procurarAjuda">Sair</Button>

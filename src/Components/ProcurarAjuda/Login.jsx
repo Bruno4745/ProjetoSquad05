@@ -15,8 +15,8 @@ export default function ModalLogin() {
       <Modal show={show} onHide={handleClose} animation={false}><Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">Acesso Restrito</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Form action="https://unfadable-air.000webhostapp.com/api/login.php" method="GET">
+        <Form action="https://unfadable-air.000webhostapp.com/api/login.php" method="GET">
+          <Modal.Body>
             <Form.Group>
               <Form.Label>E-mail</Form.Label>
               <Form.Control type="email" id="email" name="email"></Form.Control>
@@ -25,14 +25,12 @@ export default function ModalLogin() {
               <Form.Label>Senha</Form.Label>
               <Form.Control type="password" id="senha" name="senha"></Form.Control>
             </Form.Group>
-            <Form.Group>
-              <Button type="submit" variant="primary">Login</Button>
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={handleClose}>Fechar</Button>
-        </Modal.Footer>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={handleClose} variant="outline-primary">Fechar</Button>
+            <Button type="submit" variant="outline-primary">Login</Button>
+          </Modal.Footer>
+        </Form>
       </Modal>
     </div>
   );
