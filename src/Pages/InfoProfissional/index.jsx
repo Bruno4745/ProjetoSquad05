@@ -11,9 +11,9 @@ const InfoProfissional = () => {
   
         <Jumbotron fluid id="jumbotron">
           <Container>
-            <h1>Informações aos Profissionais</h1>
+            <h1 > <strong>Informações aos Profissionais</strong></h1>
             <br />
-            <p style={{ fontSize: "23px" }}>
+            <p style={{ fontSize: "23px"}}>
               Aqui você vai encontrar orietações sobre a{" "}
               <strong>entrega voluntária</strong> aos profissionais independente
               da ocupação na rede de atendimento.
