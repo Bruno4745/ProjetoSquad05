@@ -10,7 +10,7 @@ export default function ModalLogin() {
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>Login Adm</Button>
+      <button className="btn-purple" onClick={handleShow}>Login Adm</button>
 
       <Modal show={show} onHide={handleClose} animation={false}><Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">Acesso Restrito</Modal.Title>

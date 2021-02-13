@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import Depoimento from '../../../Components/Depoimento';
-import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
 
 const Depoimentos = () => {
 
@@ -48,7 +47,7 @@ const Depoimentos = () => {
                     <Form.Control id="depoimento" name="depoimento" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" onChange={handleChange} required />
                 </Form.Group>
                 <Form.Group>
-                    <Button type="submit">Enviar</Button>
+                    <button className="btn-purple" type="submit">Enviar</button>
                 </Form.Group>
             </Form>
             <h2>Depoimentos enviados:</h2>
