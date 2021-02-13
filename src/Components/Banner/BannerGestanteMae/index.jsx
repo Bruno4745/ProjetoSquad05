@@ -8,7 +8,7 @@ const BannerGestante = () => {
         src={ImgGestante}
         alt="Card image"
         className="img responsive"
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%"}}
       />
   );
 };

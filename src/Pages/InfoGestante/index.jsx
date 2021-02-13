@@ -5,7 +5,7 @@ import ModalGestante from "../../Components/Modal";
 const GestanteMae = () => {
   return (
     <>
-      <Container>
+      <Container >
         <BannerGestante />
       </Container>
 

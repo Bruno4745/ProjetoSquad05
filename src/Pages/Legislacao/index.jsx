@@ -6,7 +6,7 @@ import eca from "./eca.png";
 const Legislacao = () => {
   return (
     <>
-      <Jumbotron style={{ backgroundColor: "#ffe76d" }}>
+      <Jumbotron style={{ backgroundColor: "#ffe76d",marginTop:"-2%" }} >
         <h1>
           {" "}
           <strong>O QUE DIZ A LEGISLAÇÃO</strong>{" "}

@@ -16,7 +16,7 @@ const ModalGestante = (props) => {
             <p>
               Saiba mais na íntegra, clicando no botão abaixo
             </p>
-            <Button style={Button_cards} onClick={() => setShow(true)}>
+            <Button style={ButtonPurple} onClick={() => setShow(true)}>
               Clique Aqui
             </Button>
           </Row>
@@ -151,9 +151,8 @@ const ModalGestante = (props) => {
 export default ModalGestante;
 
 
-const Button_cards = {
+const ButtonPurple = {
   backgroundColor: "#952790",
-  borderColor: "#952790",
+  borderColor:"#952790",
   boxShadow: "0 0 0 .2rem #fff",
-};
-
+}
