@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col, Jumbotron} from 'react-bootstrap'
-import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
+import { Form } from 'react-bootstrap'
 const Contatos = () => {
 
   // Definindo um state vazio
@@ -45,7 +44,7 @@ const Contatos = () => {
               <Form.Label>Mensagem: </Form.Label>
               <Form.Control name="mensagem" as="textarea" rows={3} onChange={handleChange} />
             </Form.Group>
-            <Button variant="primary" type="submit">Enviar</Button>
+            <button className="btn-purple" type="submit">Enviar</button>
           </Form>
       
       </>

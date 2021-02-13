@@ -5,3 +5,17 @@ body {
 .pointer {
     cursor: pointer;
 }
+
+.btn-purple {
+    background-color: #952790;
+    border:1px solid #952790;
+    box-shadow: 0 0 0 .2rem #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+.btn-purple:hover {
+    background-color: #ad2ca7;
+}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap'
-import BannerFaleConosco from '../../../Components/Banner/BannerFaleConosco';
+import { Form } from 'react-bootstrap'
 
 const Denuncia = () => {
 
@@ -51,7 +50,7 @@ const Denuncia = () => {
               <Form.Control name="mensagem" as="textarea" rows={5} placeholder="Descreva como foi o atendimento" onChange={handleChange} />
             </Form.Group>
             
-            <Button variant="primary" type="submit">Enviar</Button>
+            <button className="btn-purple" type="submit">Enviar</button>
           </Form>
      
       </>
