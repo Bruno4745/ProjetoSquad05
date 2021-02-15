@@ -70,16 +70,16 @@ module.exports = (app) => {
         var connection = app.config.database();
         var query = app.models.procurarAjudaModel;
         const conteudo = req.body;
-        //console.log(conteudo)
+        console.log(conteudo)
 
         query.getFazerLogin(conteudo, connection, (err, result) => {
-            //console.log(result);
+            console.log(result);
             if(result.length == 1) {
-                console.log("adm");
-                res.redirect("http://localhost:3000/procurarAjudaAdm");
+                //console.log(result);
+                res.sendStatus(200);
             } else {
-                console.log("normal");
-                res.redirect("http://localhost:3000/procurarAjuda");
+                //console.log(result);
+                res.sendStatus(404);
             };
         });
     });

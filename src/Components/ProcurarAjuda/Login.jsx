@@ -15,22 +15,30 @@ export default function ModalLogin() {
 
   function handleChange(evento){
       dadosForm[evento.target.name] = evento.target.value;
-      // console.log(dadosForm);
+      console.log(dadosForm);
   }
 
-  const fazerLogin = async (evento) => {
+const fazerLogin = async (evento) => {
     evento.preventDefault();
     // console.log(dadosForm);
 
     const url = "http://localhost:5000/fazerLogin";
-    await fetch(url, {
+    const resposta = await fetch(url, {
         method: "POST",
+        mode: 'cors',
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(dadosForm)
-    });
-  }
+      });
+      console.log(resposta);
+      
+    if(resposta.status == 200){
+      window.location.href = "http://localhost:3000/procurarAjudaAdm";
+    } else{
+      alert("Usuario ou Senha incorreto")
+    }
+}
 
   return (
     <div>
