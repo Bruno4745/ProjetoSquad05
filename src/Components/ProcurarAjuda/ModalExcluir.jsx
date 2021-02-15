@@ -1,6 +1,6 @@
 import React from 'react'
 import excluir from './imagens/excluir.png';
-import { Modal, Button, Row, Form } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 
 export default function ModalExcluir(props) {
 
@@ -30,8 +30,8 @@ export default function ModalExcluir(props) {
                 Confirma a exclusao de: {props.conteudo.id} - {props.conteudo.nome} ?
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-primary" onClick={propsModal.onHide}>Cancelar</Button>
-                <Button variant="outline-primary" onClick={realizarExclusao}>Excluir</Button>
+                <bButton className="btn-purple" onClick={propsModal.onHide}>Cancelar</bButton>
+                <bButton className="btn-purple" onClick={realizarExclusao}>Excluir</bButton>
             </Modal.Footer>
             </Modal>
         );

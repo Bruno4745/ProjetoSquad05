@@ -24,6 +24,13 @@ module.exports = () => {
           "DELETE FROM parceiros WHERE id_parceiros = ?", id, callback
         );
     };
+
+    this.getFazerLogin = (conteudo, connection, callback) => {
+      connection.query(
+        `SELECT * FROM usuarios WHERE email = '${conteudo.email}' AND senha = '${conteudo.senha}' LIMIT 1;`, callback
+      );
+    };
+  
   
     return this;
 };

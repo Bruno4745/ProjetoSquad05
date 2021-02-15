@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
+import { Modal, Form } from "react-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
 
     //INICIO - capturar dados do formulario
-    const [dadosForm, setDadosForm] = useState({
+    const [dadosForm] = useState({
         categoria: '',
         nome: '',
         logradouro: '',
@@ -104,8 +104,8 @@ function MyVerticallyCenteredModal(props) {
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="outline-primary" onClick={props.onHide}>Cancelar</Button>
-            <Button variant="outline-primary" type="submit">Cadastrar</Button>
+            <button className="btn-purple" onClick={props.onHide}>Cancelar</button>
+            <button className="btn-purple" type="submit">Cadastrar</button>
           </Modal.Footer>
         </Form>
       </Modal>
@@ -117,9 +117,9 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
+        <button className="btn-purple" onClick={() => setModalShow(true)}>
           Cadastrar Parceiro
-        </Button>
+        </button>
   
         <MyVerticallyCenteredModal
           show={modalShow}

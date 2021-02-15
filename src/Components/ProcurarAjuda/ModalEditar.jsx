@@ -8,7 +8,7 @@ export default function ModalEditar(props) {
     function MyVerticallyCenteredModal(propsModal) {    
 
         //Captura dados do banco e insere no formulario
-        const [dadosForm, setDadosForm] = React.useState({
+        const [dadosForm]  = React.useState({
             categoria: `${props.conteudo.categoria}`,
             nome: `${props.conteudo.nome}`,
             logradouro: `${props.conteudo.logradouro}`,
@@ -106,8 +106,8 @@ export default function ModalEditar(props) {
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-primary" onClick={propsModal.onHide}>Cancelar</Button>
-                    <Button variant="outline-primary" type="submit">Editar</Button>
+                    <button className="btn-purple" onClick={propsModal.onHide}>Cancelar</button>
+                    <button className="btn-purple" type="submit">Editar</button>
                 </Modal.Footer>
             </Form>
             </Modal>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button, Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceirosAdm";
 import ModalCadastro from "../../Components/ProcurarAjuda/ModalCadastro";
@@ -52,7 +52,9 @@ const ProcurarAjuda = () => {
         </Table>
       <ModalCadastro/>
       {' '}
-      <Button href="https://projeto-squad05.vercel.app/procurarAjuda">Sair</Button>
+      <button className="btn-purple">
+        <a href="http://localhost:3000/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
+      </button>
     </Container>
   );
 };

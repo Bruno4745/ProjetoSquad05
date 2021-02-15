@@ -1,7 +1,4 @@
 import React from 'react'
-import editar from './imagens/editar.png';
-import excluir from './imagens/excluir.png';
-import { Modal, Button, Row, Form } from "react-bootstrap";
 import ModalEditar from './ModalEditar'
 import ModalExcluir from './ModalExcluir'
 
