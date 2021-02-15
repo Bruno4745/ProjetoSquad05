@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap'
 const Contatos = () => {
 
   // Definindo um state vazio
-  const [dadosForm, setDadosForm] = useState({
+  const [dadosForm] = useState({
       nome: '',
       email: '',
       mensagem: ''

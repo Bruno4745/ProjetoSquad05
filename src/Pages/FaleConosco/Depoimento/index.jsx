@@ -6,7 +6,7 @@ import Depoimento from '../../../Components/Depoimento';
 const Depoimentos = () => {
 
     // Definindo um state vazio
-    const [dadosForm, setDadosForm] = useState({
+    const [dadosForm] = useState({
         depoimento: ''
     })
 

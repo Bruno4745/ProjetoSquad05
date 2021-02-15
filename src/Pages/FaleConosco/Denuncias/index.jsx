@@ -4,7 +4,7 @@ import { Form } from 'react-bootstrap'
 const Denuncia = () => {
 
   // Definindo um state vazio
-  const [dadosForm, setDadosForm] = useState({
+  const [dadosForm] = useState({
     nome_do_estabelecimento: '',
     endereco: '',
     horario: '',

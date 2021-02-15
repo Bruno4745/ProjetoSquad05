@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Squad from "../../Components/SobreNos";
-import { Jumbotron, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import '../jumbotron.css'
 import about from './img/about.jpg'
 export default function SobreNos() {
