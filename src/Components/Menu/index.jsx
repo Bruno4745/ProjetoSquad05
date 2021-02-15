@@ -24,7 +24,7 @@ const Menu = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse>
-        <Nav className="ml-auto">
+        <Nav className="ml-auto text-center">
           <Nav.Link as={Link} href="/sobrenos" to="/sobrenos">
             Sobre Nós
           </Nav.Link>
@@ -57,8 +57,8 @@ const logoMenu = {
   boxShadow: "0 0 1em",
   borderRadius: "50%",
   position: "absolute",
-  left: "15%",
-  top: "25px",
+  left: "10%",
+  top: "15px",
   opacity: 1,
 };
 const navBarMenu = {

@@ -9,16 +9,16 @@ const ModalGestante = (props) => {
 
   return (
     <>
-      <Row className="mt-8 justify-content-md-center">
+      <Row className="justify-content-md-center">
         <Col md={8}>
           <Row className="mx-1">
             <h2 style={{ color: "#952790" }}> <strong>Saiba Mais</strong></h2>
             <p>
               Saiba mais na íntegra, clicando no botão abaixo
             </p>
-            <Button style={ButtonPurple} onClick={() => setShow(true)}>
+            <button className="btn-purple mb-4" onClick={() => setShow(true)}>
               Clique Aqui
-            </Button>
+            </button>
           </Row>
         </Col>
 
@@ -149,10 +149,3 @@ const ModalGestante = (props) => {
   );
 };
 export default ModalGestante;
-
-
-const ButtonPurple = {
-  backgroundColor: "#952790",
-  borderColor:"#952790",
-  boxShadow: "0 0 0 .2rem #fff",
-}
