@@ -8,6 +8,7 @@ import ProcurarAjudaAdm from './Pages/ProcurarAjuda/adm'
 import FaleConosco from './Pages/FaleConosco'
 import SobreNos from './Pages/SobreNos'
 import Legislacao from './Pages/Legislacao'
+import historia from './Pages/historia'
 const Routes = () => {
     return (
         <Switch>
@@ -19,6 +20,7 @@ const Routes = () => {
             <Route exact path='/sobrenos' component={SobreNos} />
             <Route exact path='/legislacao' component={Legislacao} />
             <Route exact path='/faleConosco' component={FaleConosco} />
+            <Route exact path='/historia' component={historia} />
         </Switch>
     )
 }

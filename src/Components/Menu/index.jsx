@@ -45,6 +45,9 @@ const Menu = () => {
           <Nav.Link as={Link} href="/legislacao" to="/legislacao">
             Legislação
           </Nav.Link>
+          <Nav.Link as={Link} href="/historia" to="/historia">
+            História
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
