@@ -33,10 +33,10 @@ const ProcurarAjuda = () => {
       </Row>
       <ModalLogin />
 
-      <Container>
+      <Container className='mt-5'>
 
         <div class="mapouter" style={{ position: 'relative', textAlign: 'right', height: '500px', width: '600px' }}>
-          <div class="gmap_canvas" style={{ overflow: 'hidden', background: 'none!important', height: '500px', width: '600px' }}>
+          <div class="gmap_canvas" style={{ overflow: 'hidden', background: 'none!important', height: '450px', width: '800px' }}>
             <iframe width="600" height="500" id="gmap_canvas"
               src="https://maps.google.com/maps?q=%20Mau%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
