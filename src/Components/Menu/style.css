@@ -3,3 +3,17 @@
     opacity: .90;
 }
 
+/*Menu*/
+.dropdownMenu{
+    color:"white" !important;
+}
+.dropdownMenu:focus{
+    background-color: #952790 !important;
+}
+.dropdown-item.active{
+    background-color: #952790 !important
+}
+
+.dropdownMenu:hover {
+    background-color: #952790 !important;
+}
