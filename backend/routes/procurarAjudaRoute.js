@@ -1,6 +1,6 @@
 module.exports = (app) => {
 
-    app.get('/procurarAjuda', (req, res) => {
+    app.get('/api/procurarAjuda', (req, res) => {
 
         var connection = app.config.database();
         var query = app.models.procurarAjudaModel;
