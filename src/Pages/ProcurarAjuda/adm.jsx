@@ -10,7 +10,7 @@ const ProcurarAjuda = () => {
   useEffect(() => {
     async function fetchData() {
       const resposta = await fetch(
-        "http://localhost:5000/procurarAjuda"
+        "http://localhost/procurarAjuda"
       );
       const dados = await resposta.json();
       setParceiros(dados);
