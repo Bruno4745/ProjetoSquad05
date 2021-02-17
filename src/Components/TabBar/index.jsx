@@ -19,7 +19,7 @@ const TabBar = () => {
               <Nav.Link eventKey="first" className="navlink">Contato</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second" className="navlink">Denuncia</Nav.Link>
+              <Nav.Link eventKey="second" className="navlink">Denúncia</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="third" className="navlink">Depoimento</Nav.Link>

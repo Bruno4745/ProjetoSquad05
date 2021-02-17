@@ -147,7 +147,7 @@ const Legislacao = () => {
       <Container className=" referencias mt-5" style={{fontSize:"20px",}}>
         <h3>
           {" "}
-          <strong>Referências</strong>
+          <strong style={{ color: "#952790"}}>Referências</strong>
         </h3>
         <div>
           <p>
