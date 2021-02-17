@@ -15,7 +15,7 @@ export default function ModalLogin() {
 
   function handleChange(evento){
       dadosForm[evento.target.name] = evento.target.value;
-      console.log(dadosForm);
+      //console.log(dadosForm);
   }
 
 const fazerLogin = async (evento) => {
