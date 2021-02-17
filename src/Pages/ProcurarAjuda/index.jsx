@@ -31,8 +31,28 @@ const ProcurarAjuda = () => {
             telefone={item.telefone} />
         ))}
       </Row>
-      <ModalLogin/>
-    </Container>
+      <ModalLogin />
+
+      <Container>
+
+        <div class="mapouter" style={{ position: 'relative', textAlign: 'right', height: '500px', width: '600px' }}>
+          <div class="gmap_canvas" style={{ overflow: 'hidden', background: 'none!important', height: '500px', width: '600px' }}>
+            <iframe width="600" height="500" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=%20Mau%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://yt2.org">
+            </a>
+            <br />
+              
+                </div>
+          </div>
+
+                </Container>
+
+      </Container>
+
+    
   );
 };
 

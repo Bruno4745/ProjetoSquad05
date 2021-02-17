@@ -24,6 +24,9 @@ const TabBar = () => {
             <Nav.Item>
               <Nav.Link eventKey="third" className="navlink">Depoimento</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="fourth" className="navlink">Chat</Nav.Link>
+            </Nav.Item>
           </Nav>
         </Col>
 
@@ -45,6 +48,13 @@ const TabBar = () => {
               <Depoimentos />
 
             </Tab.Pane>
+            <Tab.Pane eventKey="fourth">
+
+            <button className="btn-purple mt-2" style={{width: '500px', marginLeft: '70px'}}>
+        <a href="http://localhost:5001/chat" style={{color: "white", textDecoration: "none" }} target="_blank">CLIQUE AQUI</a>
+      </button>
+
+</Tab.Pane>
           </Tab.Content>
         </Col>
       </Row>

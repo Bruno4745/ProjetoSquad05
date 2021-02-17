@@ -1,13 +1,11 @@
 import React from 'react';
-import { Jumbotron, Container, Card, Row, Col, Button } from "react-bootstrap";
+import { Jumbotron, Container, Card, Row, Col } from "react-bootstrap";
 import Carousel from '../../Components/Carousel/Carousel';
 import CarouselComCards from '../../Components/Carousel/CarouselComCards';
 
 const Home = () => {
 
-  const redirecionar = () => {
-    window.location.href = "http://localhost:5001/chat"
-  }
+ 
   return (
     <Container fluid>
       <Carousel />
@@ -156,7 +154,7 @@ const Home = () => {
 
         </Col>
       </Row>
-      <Button onClick={redirecionar}>CHAT</Button>
+
     </Container>
 
   );
