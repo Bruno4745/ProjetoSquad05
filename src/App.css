@@ -21,18 +21,5 @@ body {
 
 }
 
-/*Menu*/
-.dropdownMenu{
-    color:"black" !important;
-}
-.dropdownMenu:focus{
-    background-color: #952790 !important;
-}
-.dropdownMenu:active{
-    background-color: #952790 !important;
-}
-.dropdownMenu:hover {
-    background-color: #952790 !important;
-}
 
 

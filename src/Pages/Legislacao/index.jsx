@@ -16,7 +16,7 @@ const Legislacao = () => {
           <div className=" mx-auto text-center">
             <Card.Img
               className="img responsive"
-              style={{ width: "30%" }}
+              style={{ width: "40%" }}
               src={eca}
             />
           </div>
@@ -27,7 +27,7 @@ const Legislacao = () => {
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              <h6 style={{ color: "#952790", fontSize:"25px" }}>
+              <h6 style={{ color: "#952790", fontSize:"18px" }}>
                 <strong>Constituição Federal </strong>
               </h6>
             </Accordion.Toggle>
@@ -52,7 +52,7 @@ const Legislacao = () => {
 
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              <h6 style={{ color: "#952790", fontSize:"25px"  }}>
+              <h6 style={{ color: "#952790", fontSize:"18px"  }}>
                 <strong>Estatuto da Criança e do Adolescente</strong>
               </h6>
             </Accordion.Toggle>
@@ -76,7 +76,7 @@ const Legislacao = () => {
 
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-              <h6 style={{ color: "#952790", fontSize:"25px" }}>
+              <h6 style={{ color: "#952790", fontSize:"18px" }}>
                 <strong>Entrega legal - Lei nº 13.509, de 2017</strong>
               </h6>
             </Accordion.Toggle>
@@ -144,7 +144,7 @@ const Legislacao = () => {
         </Accordion>
       </Container>
 
-      <Container className=" referencias mt-5" style={{fontSize:"20px",}}>
+      <Container className=" referencias mt-5" style={{fontSize:"16px",}}>
         <h3>
           {" "}
           <strong style={{ color: "#952790"}}>Referências</strong>
@@ -198,6 +198,6 @@ export default Legislacao;
 
 
 const ParagrafoLei = {
-  fontSize:"20px",
+  fontSize:"17px",
   marginLeft:"1%"
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 import BannerGestante from "../../Components/Banner/BannerGestanteMae";
 import ModalGestante from "../../Components/Modal";
+
 const GestanteMae = () => {
   return (
     <>

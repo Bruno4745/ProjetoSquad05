@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal, Row, Col } from "react-bootstrap";
 
 
-const ModalGestante = (props) => {
+const ModalGestante = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,7 +14,7 @@ const ModalGestante = (props) => {
           <Row className="mx-1">
             <h2 style={{ color: "#952790" }}> <strong>Saiba Mais</strong></h2>
             <p>
-              Saiba mais na íntegra, clicando no botão abaixo
+              Clicando no botão abaixo
             </p>
             <button className="btn-purple mb-4" onClick={() => setShow(true)}>
               Clique Aqui
@@ -140,7 +140,7 @@ const ModalGestante = (props) => {
           </ul>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button  onClick={handleClose} style={BtnPurple}>
             Fechar
           </Button>
         </Modal.Footer>
@@ -149,3 +149,9 @@ const ModalGestante = (props) => {
   );
 };
 export default ModalGestante;
+
+const BtnPurple = {
+  backgroundColor: "#952790",
+  borderColor:"#952790"
+ 
+}
