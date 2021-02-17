@@ -10,9 +10,10 @@ const ProcurarAjuda = () => {
   useEffect(() => {
     async function fetchData() {
       const resposta = await fetch(
-        "http://localhost/procurarAjuda"
+        "https://rocky-wave-60963.herokuapp.com/procurarAjuda"
       );
       const dados = await resposta.json();
+      console.log(`dados: ${dados}`);
       setParceiros(dados);
     }
     fetchData();
