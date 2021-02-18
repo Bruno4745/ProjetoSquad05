@@ -4,6 +4,7 @@ import Squad from "../../Components/SobreNos";
 import { Container, Row, Col } from "react-bootstrap";
 import '../jumbotron.css'
 import about from './img/about.jpg'
+import about2 from './img/about2.jpg'
 export default function SobreNos() {
   const [squad, setSquad] = useState([]);
 
@@ -137,7 +138,7 @@ export default function SobreNos() {
 
         </Col>
         <Col xs={12} sm={12} md={9} lg={6}>
-          <img className='mt-5' src={about} alt="" style={{ width: "100%" }} />
+          <img className='mt-5' src={about2} alt="" style={{ width: "100%" }} />
         </Col>
 
       </Row>
