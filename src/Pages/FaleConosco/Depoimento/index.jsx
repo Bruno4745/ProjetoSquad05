@@ -17,7 +17,7 @@ const Depoimentos = () => {
     }
 
     const enviaDepoimento = async (evento) => {
-        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/depoimento";
+        const url = "http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/faleconosco/depoimento";
         await fetch(url, {
             method: "POST",
             headers: {
@@ -31,7 +31,7 @@ const Depoimentos = () => {
 
     useEffect(() => {
         async function fethData() {
-            const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/depoimento";
+            const url = "http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/faleconosco/depoimento";
             const resposta = await fetch(url);
             const resultado = await resposta.json();
             setDepoimentos(resultado);

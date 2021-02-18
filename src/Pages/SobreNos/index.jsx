@@ -10,7 +10,7 @@ export default function SobreNos() {
 
   useEffect(() => {
     async function fetchData() {
-      const resposta = await fetch(`https://protected-sierra-12413.herokuapp.com/squad`);
+      const resposta = await fetch(`http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/squad`);
       const dados = await resposta.json();
       setSquad(dados);
     }

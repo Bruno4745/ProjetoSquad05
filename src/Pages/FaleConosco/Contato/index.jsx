@@ -18,7 +18,7 @@ const Contatos = () => {
     const enviaMensagem = async (evento) => {
         // evento.preventDefault();
         // console.log(dadosForm);
-        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/contato";
+        const url = "http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/faleconosco/contato";
         await fetch(url, {
             method: "POST",
             headers: {
