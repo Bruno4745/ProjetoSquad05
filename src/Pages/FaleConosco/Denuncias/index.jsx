@@ -18,7 +18,7 @@ const Denuncia = () => {
   }
 
     const enviaDenuncia = async (evento) => {
-        const url = "http://localhost:5000/faleconosco/denuncia";
+        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/denuncia";
         await fetch(url, {
           method: "POST",
           headers: {

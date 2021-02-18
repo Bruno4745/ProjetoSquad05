@@ -54,7 +54,7 @@ const ProcurarAjuda = () => {
       <ModalCadastro/>
       {' '}
       <button className="btn-purple">
-        <a href="http://localhost:3000/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
+        <a href="https://protected-sierra-12413.herokuapp.com/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
       </button>
     </Container>
   );

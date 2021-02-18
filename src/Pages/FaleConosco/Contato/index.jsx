@@ -18,7 +18,7 @@ const Contatos = () => {
     const enviaMensagem = async (evento) => {
         // evento.preventDefault();
         // console.log(dadosForm);
-        const url = "http://localhost:5000/faleconosco/contato";
+        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/contato";
         await fetch(url, {
             method: "POST",
             headers: {
