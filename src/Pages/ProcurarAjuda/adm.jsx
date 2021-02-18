@@ -54,7 +54,7 @@ const ProcurarAjuda = () => {
       <ModalCadastro/>
       {' '}
       <button className="btn-purple">
-        <a href="https://protected-sierra-12413.herokuapp.com/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
+        <a href="https://projeto-squad05.vercel.app/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
       </button>
     </Container>
   );

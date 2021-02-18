@@ -34,7 +34,7 @@ const fazerLogin = async (evento) => {
       console.log(resposta);
       
     if(resposta.status == 200){
-      window.location.href = "https://rocky-wave-60963.herokuapp.com/procurarAjudaAdm";
+      window.location.href = "https://projeto-squad05.vercel.app/procurarAjudaAdm";
     } else{
       alert("Usuario ou Senha incorreto")
     }
