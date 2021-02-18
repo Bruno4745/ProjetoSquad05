@@ -10,7 +10,7 @@ const ProcurarAjuda = () => {
   useEffect(() => {
     async function fetchData() {
       const resposta = await fetch(
-        "http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/procurarAjuda"
+        "https://protected-sierra-12413.herokuapp.com/procurarAjuda"
       );
       const dados = await resposta.json();
       console.log(`dados: ${dados}`);
@@ -54,7 +54,7 @@ const ProcurarAjuda = () => {
       <ModalCadastro/>
       {' '}
       <button className="btn-purple">
-        <a href="http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
+        <a href="https://protected-sierra-12413.herokuapp.com/procurarAjuda" style={{color: "white", textDecoration: "none"}}>Sair</a>
       </button>
     </Container>
   );

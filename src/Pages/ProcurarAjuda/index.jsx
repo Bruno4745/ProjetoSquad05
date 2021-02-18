@@ -9,7 +9,7 @@ const ProcurarAjuda = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const resposta = await fetch("http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/procurarAjuda");
+      const resposta = await fetch("https://protected-sierra-12413.herokuapp.com/procurarAjuda");
       const dados = await resposta.json();
       setParceiros(dados);
     }

@@ -18,7 +18,7 @@ const Denuncia = () => {
   }
 
     const enviaDenuncia = async (evento) => {
-        const url = "http://app-6025a955-23b3-45e3-97e3-0b617e91beec.cleverapps.io/faleconosco/denuncia";
+        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/denuncia";
         await fetch(url, {
           method: "POST",
           headers: {
