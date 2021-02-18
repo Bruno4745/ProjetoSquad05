@@ -16,7 +16,7 @@ const Contatos = () => {
   }
 
     const enviaMensagem = async (evento) => {
-        // evento.preventDefault();
+        evento.preventDefault();
         // console.log(dadosForm);
         const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/contato";
         await fetch(url, {

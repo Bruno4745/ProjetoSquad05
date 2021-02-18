@@ -30,7 +30,8 @@ export default function ModalEditar(props) {
         }
         
         //Funcao para realizar a alteracao das informacoes
-        const atualizarParceiro = async () => {
+        const atualizarParceiro = async (evento) => {
+            evento.preventDefault();
             await fetch(`https://protected-sierra-12413.herokuapp.com/procurarAjuda/${props.conteudo.id}`, {
                 method: "PUT",
                 headers: {

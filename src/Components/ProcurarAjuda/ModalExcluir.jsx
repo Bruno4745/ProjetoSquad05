@@ -7,7 +7,8 @@ export default function ModalExcluir(props) {
     function MyVerticallyCenteredModal(propsModal) {    
 
         //Ao confirmar a exclusao, eh chamada esta funcao para excluir o registro
-        const realizarExclusao = async () => {
+        const realizarExclusao = async (evento) => {
+            evento.preventDefault();
             await fetch(`https://protected-sierra-12413.herokuapp.com/procurarAjuda/${props.conteudo.id}`, {
                 method: "DELETE"
             })
