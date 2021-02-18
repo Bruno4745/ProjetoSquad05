@@ -22,7 +22,7 @@ const fazerLogin = async (evento) => {
     evento.preventDefault();
     // console.log(dadosForm);
 
-    const url = "http://localhost:5000/fazerLogin";
+    const url = "https://protected-sierra-12413.herokuapp.com/fazerLogin";
     const resposta = await fetch(url, {
         method: "POST",
         mode: 'cors',
@@ -34,7 +34,7 @@ const fazerLogin = async (evento) => {
       console.log(resposta);
       
     if(resposta.status == 200){
-      window.location.href = "http://localhost:3000/procurarAjudaAdm";
+      window.location.href = "https://rocky-wave-60963.herokuapp.com/procurarAjudaAdm";
     } else{
       alert("Usuario ou Senha incorreto")
     }

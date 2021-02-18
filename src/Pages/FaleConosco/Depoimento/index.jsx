@@ -17,7 +17,7 @@ const Depoimentos = () => {
     }
 
     const enviaDepoimento = async (evento) => {
-        const url = "http://localhost:5000/faleconosco/depoimento";
+        const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/depoimento";
         await fetch(url, {
             method: "POST",
             headers: {
@@ -31,7 +31,7 @@ const Depoimentos = () => {
 
     useEffect(() => {
         async function fethData() {
-            const url = "http://localhost:5000/faleconosco/depoimento";
+            const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/depoimento";
             const resposta = await fetch(url);
             const resultado = await resposta.json();
             setDepoimentos(resultado);

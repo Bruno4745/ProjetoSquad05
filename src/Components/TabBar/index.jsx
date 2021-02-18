@@ -51,7 +51,7 @@ const TabBar = () => {
             <Tab.Pane eventKey="fourth">
 
             <button className="btn-purple mt-2" style={{width: '500px', marginLeft: '70px'}}>
-        <a href="http://localhost:5001/chat" style={{color: "white", textDecoration: "none" }} target="_blank">CLIQUE AQUI</a>
+        <a href="https://chat-recomecar.herokuapp.com/" style={{color: "white", textDecoration: "none" }} target="_blank">CLIQUE AQUI</a>
       </button>
 
 </Tab.Pane>

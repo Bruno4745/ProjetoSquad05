@@ -8,7 +8,7 @@ export default function ModalExcluir(props) {
 
         //Ao confirmar a exclusao, eh chamada esta funcao para excluir o registro
         const realizarExclusao = async () => {
-            await fetch(`http://localhost:5000/procurarAjuda/${props.conteudo.id}`, {
+            await fetch(`https://protected-sierra-12413.herokuapp.com/procurarAjuda/${props.conteudo.id}`, {
                 method: "DELETE"
             })
             window.location.reload();

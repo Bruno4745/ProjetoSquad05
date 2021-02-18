@@ -29,7 +29,7 @@ function MyVerticallyCenteredModal(props) {
         // evento.preventDefault();
         // console.log(dadosForm);
 
-        const url = "http://localhost:5000/procurarAjuda";
+        const url = "https://protected-sierra-12413.herokuapp.com/procurarAjuda";
         await fetch(url, {
             method: "POST",
             headers: {
