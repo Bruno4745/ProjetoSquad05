@@ -19,13 +19,16 @@ const Contatos = () => {
         evento.preventDefault();
         // console.log(dadosForm);
         const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/contato";
-        await fetch(url, {
+        const resposta = await fetch(url, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
             },
             body: JSON.stringify(dadosForm)
         })
+        if(resposta){
+          window.location.reload()
+        }
     }
 
     return (

@@ -1,5 +1,5 @@
 import React  from "react";
-import { Tab, Row, Col, Nav } from "react-bootstrap";
+import { Tab, Row, Col, Nav, Button } from "react-bootstrap";
 import Contatos from "../../Pages/FaleConosco/Contato";
 import Denuncia from "../../Pages/FaleConosco/Denuncias";
 import Depoimentos from "../../Pages/FaleConosco/Depoimento";
@@ -49,12 +49,12 @@ const TabBar = () => {
 
             </Tab.Pane>
             <Tab.Pane eventKey="fourth">
-
-            <button className="btn-purple mt-2" style={{width: '500px', marginLeft: '70px'}}>
-        <a href="https://chat-recomecar.herokuapp.com/" style={{color: "white", textDecoration: "none" }} target="_blank">CLIQUE AQUI</a>
-      </button>
-
-</Tab.Pane>
+              <a href="https://chat-recomecar.herokuapp.com/" style={{color: "white", textDecoration: "none" }} target="_blank">              
+                <button className="btn-purple mt-2">
+                  INICIAR CHAT
+                </button>
+              </a>
+            </Tab.Pane>
           </Tab.Content>
         </Col>
       </Row>

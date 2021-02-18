@@ -19,13 +19,16 @@ const Depoimentos = () => {
     const enviaDepoimento = async (evento) => {
         evento.preventDefault();
         const url = "https://protected-sierra-12413.herokuapp.com/faleconosco/depoimento";
-        await fetch(url, {
+        const resposta = await fetch(url, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
             },
             body: JSON.stringify(dadosForm)
         });
+        if(resposta){
+          window.location.reload()
+        }
     }
 
     const [depoimentos, setDepoimentos] = useState([]);
