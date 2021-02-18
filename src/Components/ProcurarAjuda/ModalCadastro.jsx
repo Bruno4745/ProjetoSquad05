@@ -100,7 +100,7 @@ function MyVerticallyCenteredModal(props) {
             </Form.Group>
             <Form.Group>
                 <Form.Label>Site: </Form.Label>
-                <Form.Control type="text" name="site" onChange={handleChange} />
+                <Form.Control type="text" name="site_parceiro" onChange={handleChange} />
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
