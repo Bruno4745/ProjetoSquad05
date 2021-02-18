@@ -26,7 +26,7 @@ function MyVerticallyCenteredModal(props) {
     //FIM - capturar dados do formulario
 
     const enviaParceiro = async (evento) => {
-        // evento.preventDefault();
+        evento.preventDefault();
         // console.log(dadosForm);
 
         const url = "https://protected-sierra-12413.herokuapp.com/procurarAjuda";
