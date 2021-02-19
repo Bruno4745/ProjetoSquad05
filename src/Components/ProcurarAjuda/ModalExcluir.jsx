@@ -31,8 +31,9 @@ export default function ModalExcluir(props) {
                 Confirma a exclusao de: {props.conteudo.id} - {props.conteudo.nome} ?
             </Modal.Body>
             <Modal.Footer>
-                <bButton className="btn-purple" onClick={propsModal.onHide}>Cancelar</bButton>
-                <bButton className="btn-purple" onClick={realizarExclusao}>Excluir</bButton>
+                <button className="btn-purple" onClick={propsModal.onHide}>Cancelar</button>
+                {' '}
+                <button className="btn-purple" onClick={realizarExclusao}>Excluir</button>
             </Modal.Footer>
             </Modal>
         );

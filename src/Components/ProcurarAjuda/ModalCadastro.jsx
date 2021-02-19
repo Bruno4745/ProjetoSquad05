@@ -52,7 +52,7 @@ function MyVerticallyCenteredModal(props) {
             Cadastrar Novo Parceiro
           </Modal.Title>
         </Modal.Header>
-        <Form onSubmit={enviaParceiro} >
+        <Form>
           <Modal.Body>
             <Form.Group>
                 <Form.Label>Categoria: </Form.Label>
@@ -105,7 +105,8 @@ function MyVerticallyCenteredModal(props) {
           </Modal.Body>
           <Modal.Footer>
             <button className="btn-purple" onClick={props.onHide}>Cancelar</button>
-            <button className="btn-purple" type="submit">Cadastrar</button>
+            {' '}
+            <button className="btn-purple" onClick={enviaParceiro}>Cadastrar</button>
           </Modal.Footer>
         </Form>
       </Modal>

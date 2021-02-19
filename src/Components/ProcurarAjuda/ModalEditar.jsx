@@ -55,7 +55,7 @@ export default function ModalEditar(props) {
                 Editar
                 </Modal.Title>
             </Modal.Header>
-            <Form onSubmit={atualizarParceiro}>
+            <Form>
                 <Modal.Body>
                     <Form.Group>
                         <Form.Label>Categoria: </Form.Label>
@@ -108,7 +108,8 @@ export default function ModalEditar(props) {
                 </Modal.Body>
                 <Modal.Footer>
                     <button className="btn-purple" onClick={propsModal.onHide}>Cancelar</button>
-                    <button className="btn-purple" type="submit">Editar</button>
+                    {' '}
+                    <button className="btn-purple" onClick={atualizarParceiro}>Editar</button>
                 </Modal.Footer>
             </Form>
             </Modal>
