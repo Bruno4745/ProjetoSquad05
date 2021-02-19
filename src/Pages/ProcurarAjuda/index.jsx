@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import TabelaDeParceiros from "../../Components/ProcurarAjuda/TabelaDeParceiros";
 import ModalLogin from "../../Components/ProcurarAjuda/Login";
@@ -9,7 +9,9 @@ const ProcurarAjuda = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const resposta = await fetch("https://protected-sierra-12413.herokuapp.com/procurarAjuda");
+      const resposta = await fetch(
+        "https://protected-sierra-12413.herokuapp.com/procurarAjuda"
+      );
       const dados = await resposta.json();
       setParceiros(dados);
     }
@@ -32,40 +34,40 @@ const ProcurarAjuda = () => {
       </Row>
       <ModalLogin />
 
-      <Container className="mt-5">
+      <Container fluid className="mt-5">
         <h2>Veja No Mapa</h2>
-        <div
+        <Row
           className="mapouter"
           style={{
             position: "relative",
             textAlign: "right",
-            height: "500px",
-            width: "600px",
+            height: "100%",
+            width: "100%",
           }}
         >
-          <div
+          <Row
             className="gmap_canvas"
             style={{
               overflow: "hidden",
               background: "none!important",
-              height: "500px",
-              width: "600px",
             }}
           >
-            <iframe
-              width="600"
-              height="500"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=%20Mau%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe>
-            <a href="https://yt2.org"></a>
-            <br />
-          </div>
-        </div>
+            <Col xs={12} sm={12} md={9} lg={6}>
+              <iframe
+                src="https://maps.google.com/maps?q=%20Mau%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                style={{
+                  width:"1000px",
+                   height:"300px",
+                  frameBorder: "0",
+                  scrolling: "no",
+                  marginHeight: "0",
+                  marginWidth: "0"
+                }}
+              ></iframe>
+              <a href="https://yt2.org"></a>
+            </Col>
+          </Row>
+        </Row>
       </Container>
     </Container>
   );
