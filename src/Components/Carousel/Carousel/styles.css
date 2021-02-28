@@ -23,30 +23,27 @@
 }
 
 .text-box{
-  width: 50%;
   position: absolute;
-  top: 2%;
+  top: 3%;
   left: 5%;
   color: #fff;
   animation: textup 12s linear infinite;
   transform: translateY(100px);
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.6);
 }
+
 .text-box h1{
-  margin-bottom: 2px;
-  font-size: 2em;
+  margin-bottom: 1.4px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgb(243, 66, 219);
+
 }
 .text-box p{
   font-size: 1rem;
   line-height:1.2rem;
   margin-top: 10px;
 }
-.text-box span{
-  background: rgb(243, 66, 219);
-  height: 1px;
-  width: 100px;
-  position: absolute;
-  left: 0;
-}
+
 .banner1{
   animation: slide1 12s linear infinite;
 }
@@ -153,7 +150,12 @@
   animation-delay: 9s;
 }
 
-.span{
-  width: 100px;
-  border: 1px solid rgb(209, 60, 172);
+@media (min-width: 800px) {
+  .text-box h1 {
+    font-size: 3rem;
+  }
+  .text-box p {
+    font-size: 2rem;
+    line-height:2.2rem;
+  }
 }

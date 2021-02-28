@@ -23,7 +23,8 @@ const CarouselComCards = () => {
         <div className="text-box text-box2">
             <h1># AMOR</h1>
             <div className="span"></div>
-            <p>Tratasse de um gesto de amor que pode transformar vidas.<br/></p>
+            <p>Trata-se de um gesto de amor que<br />
+                pode transformar vidas.<br/></p>
         </div>   
     </div>
 
