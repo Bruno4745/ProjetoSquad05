@@ -1,6 +1,7 @@
 import Menu from "./Components/Menu";
 import Footer from "./Components/Footer";
 import Routes from "./Routes";
+import Chat from "./Components/Chat";
 import { BrowserRouter } from "react-router-dom";
 
 import "./App.css";
@@ -11,6 +12,7 @@ function App() {
       <Menu />
       <main>
         <Routes />
+        <Chat />
       </main>
       <Footer />
     </BrowserRouter>

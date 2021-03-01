@@ -1,0 +1,8 @@
+.icone-chat {
+    width: 65px;
+    height: 65px;
+    z-index: 199;
+    position: fixed;
+    top: 85vh;
+    right: 5vw;
+  }

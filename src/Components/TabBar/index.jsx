@@ -24,9 +24,9 @@ const TabBar = () => {
             <Nav.Item>
               <Nav.Link eventKey="third" className="navlink">Depoimento</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link eventKey="fourth" className="navlink">Chat</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Col>
 
@@ -48,13 +48,13 @@ const TabBar = () => {
               <Depoimentos />
 
             </Tab.Pane>
-            <Tab.Pane eventKey="fourth">
+            {/* <Tab.Pane eventKey="fourth">
               <a href="https://chat-recomecar.herokuapp.com/" style={{color: "white", textDecoration: "none" }} target="_blank">              
                 <button className="btn-purple mt-2">
                   INICIAR CHAT
                 </button>
               </a>
-            </Tab.Pane>
+            </Tab.Pane> */}
           </Tab.Content>
         </Col>
       </Row>
