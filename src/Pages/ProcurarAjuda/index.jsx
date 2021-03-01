@@ -19,7 +19,7 @@ const ProcurarAjuda = () => {
   }, []);
 
   return (
-    <Container>
+    <Container className="mt-4">
       <Row>
         {parceiros &&
           parceiros.map((item) => (

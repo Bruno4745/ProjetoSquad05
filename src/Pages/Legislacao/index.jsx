@@ -1,142 +1,133 @@
 import React from "react";
 import { Jumbotron, Container, Accordion, Card } from "react-bootstrap";
+import './legislacao.css';
 
-import eca from "./eca.png";
+// import eca from "./eca.png";
 
 const Legislacao = () => {
   return (
     <>
-      <Jumbotron style={{ backgroundColor: "#ffe76d",marginTop:"-2%" }} >
-        <h1>
-          {" "}
-          <strong>O QUE DIZ A LEGISLAÇÃO</strong>{" "}
-        </h1>
-        <br/>
-        <div className=" align-items-center">
-          <div className=" mx-auto text-center">
-            <Card.Img
-              className="img responsive"
-              style={{ width: "40%" }}
-              src={eca}
-            />
-          </div>
-        </div>
-      </Jumbotron>
+      <Container className="containerBanner">
+        <h1>O QUE DIZ A <strong>LEGISLAÇÃO</strong></h1>
+        <div className="underline"></div>
+        <div className="bannerLegislacao" />
+        <p>Estatuto da criança e do adolescente</p>
+      </Container>
 
       <Container>
         <Accordion defaultActiveKey="0">
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              <h6 style={{ color: "#952790", fontSize:"18px" }}>
+            <Accordion.Toggle as={Card.Header} eventKey="0" className="pointer">
+              <h6 style={{ color: "#952790", fontSize: "18px" }}>
                 <strong>Constituição Federal </strong>
               </h6>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body style={ParagrafoLei}>
-                    <p>
-                      A Constituição Federal de 1988 garante, dentro dos
-                      princípios da dignidade da pessoa humana e da paternidade
-                      responsável, o direito ao planejamento familiar (CF, art.
-                      226, § 7º). Por sua vez, a Lei nº 9.263, de 1996 (art.
-                      3º), prevê que o planejamento familiar integra o conjunto
-                      de ações à mulher, ao homem ou ao casal. Nossa
-                      Constituição também estabelece que é dever da família, da
-                      sociedade e do Estado assegurar à criança, com prioridade
-                      absoluta, diversos direitos, dentre eles, o direito à vida
-                      e de ser colocada a salvo de toda forma de negligência,
-                      violência ou crueldade. (CF, art. 227).
+                <p>
+                  A Constituição Federal de 1988 garante, dentro dos
+                  princípios da dignidade da pessoa humana e da paternidade
+                  responsável, o direito ao planejamento familiar (CF, art.
+                  226, § 7º). Por sua vez, a Lei nº 9.263, de 1996 (art.
+                  3º), prevê que o planejamento familiar integra o conjunto
+                  de ações à mulher, ao homem ou ao casal. Nossa
+                  Constituição também estabelece que é dever da família, da
+                  sociedade e do Estado assegurar à criança, com prioridade
+                  absoluta, diversos direitos, dentre eles, o direito à vida
+                  e de ser colocada a salvo de toda forma de negligência,
+                  violência ou crueldade. (CF, art. 227).
                     </p>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
 
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              <h6 style={{ color: "#952790", fontSize:"18px"  }}>
+            <Accordion.Toggle as={Card.Header} eventKey="1" className="pointer">
+              <h6 style={{ color: "#952790", fontSize: "18px" }}>
                 <strong>Estatuto da Criança e do Adolescente</strong>
               </h6>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body style={ParagrafoLei}>
-                    <p>
-                      O Estatuto da Criança e do Adolescente – ECA (Lei nº
-                      8.969, de 1990) – Art. 7º – A criança e o adolescente têm
-                      direito a proteção à vida e à saúde, mediante a efetivação
-                      de políticas sociais públicas que permitam o nascimento e
-                      o desenvolvimento sadio e harmonioso, em condições dignas
-                      de existência. § 5º – A assistência referida no § 4º deste
-                      artigo deverá ser prestada também a gestantes e mães que
-                      manifestem interesse em entregar seus filhos para adoção,
-                      bem como a gestantes e mães que se encontrem em situação
-                      de privação de liberdade.
+                <p>
+                  O Estatuto da Criança e do Adolescente – ECA (Lei nº
+                  8.969, de 1990) – Art. 7º – A criança e o adolescente têm
+                  direito a proteção à vida e à saúde, mediante a efetivação
+                  de políticas sociais públicas que permitam o nascimento e
+                  o desenvolvimento sadio e harmonioso, em condições dignas
+                  de existência. § 5º – A assistência referida no § 4º deste
+                  artigo deverá ser prestada também a gestantes e mães que
+                  manifestem interesse em entregar seus filhos para adoção,
+                  bem como a gestantes e mães que se encontrem em situação
+                  de privação de liberdade.
                     </p>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
 
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="2">
-              <h6 style={{ color: "#952790", fontSize:"18px" }}>
+            <Accordion.Toggle as={Card.Header} eventKey="2" className="pointer">
+              <h6 style={{ color: "#952790", fontSize: "18px" }}>
                 <strong>Entrega legal - Lei nº 13.509, de 2017</strong>
               </h6>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body style={ParagrafoLei}>
-                    <p>
-                      A recente Lei nº 13.509, de 2017 - que alterou e inovou o
-                      ECA – trouxe importantes regras sobre o que denominamos
-                      “Entrega Legal”, destacando-se as seguintes:
+                <p>
+                  A recente Lei nº 13.509, de 2017 - que alterou e inovou o
+                  ECA – trouxe importantes regras sobre o que denominamos
+                  “Entrega Legal”, destacando-se as seguintes:
                     </p>
-                    <p>
-                      Art. 19-A – A gestante ou mãe que manifeste interesse em
-                      entregar seu filho para adoção, antes ou logo após o
-                      nascimento, será encaminhada à Justiça da Infância e da
-                      Juventude.
+                <p>
+                  Art. 19-A – A gestante ou mãe que manifeste interesse em
+                  entregar seu filho para adoção, antes ou logo após o
+                  nascimento, será encaminhada à Justiça da Infância e da
+                  Juventude.
                     </p>
-                    <p>
-                      § 1º – A gestante ou mãe será ouvida pela equipe
-                      interprofissional da Justiça da Infância e da Juventude,
-                      que apresentará relatório à autoridade judiciária,
-                      considerando inclusive os eventuais efeitos do estado
-                      gestacional e puerperal.
+                <p>
+                  § 1º – A gestante ou mãe será ouvida pela equipe
+                  interprofissional da Justiça da Infância e da Juventude,
+                  que apresentará relatório à autoridade judiciária,
+                  considerando inclusive os eventuais efeitos do estado
+                  gestacional e puerperal.
                     </p>
-                    <p>
-                      § 2º – De posse do relatório, a autoridade judiciária
-                      poderá determinar o encaminhamento da gestante ou mãe,
-                      mediante sua expressa concordância, à rede pública de
-                      saúde e assistência social para atendimento especializado.
+                <p>
+                  § 2º – De posse do relatório, a autoridade judiciária
+                  poderá determinar o encaminhamento da gestante ou mãe,
+                  mediante sua expressa concordância, à rede pública de
+                  saúde e assistência social para atendimento especializado.
                     </p>
-                    <p>
-                      § 5º – Após o nascimento da criança, a vontade da mãe ou
-                      de ambos os genitores, se houver pai registral ou pai
-                      indicado, deve ser manifestada na audiência a que se
-                      refere o § 1º do art. 166 desta Lei, garantido o sigilo
-                      sobre a entrega.
+                <p>
+                  § 5º – Após o nascimento da criança, a vontade da mãe ou
+                  de ambos os genitores, se houver pai registral ou pai
+                  indicado, deve ser manifestada na audiência a que se
+                  refere o § 1º do art. 166 desta Lei, garantido o sigilo
+                  sobre a entrega.
                     </p>
-                    <p>
-                      § 8º – Na hipótese de desistência pelos genitores -
-                      manifestada em audiência ou perante a equipe
-                      interprofissional - da entrega da criança após o
-                      nascimento, a criança será mantida com os genitores, e
-                      será determinado pela Justiça da Infância e da Juventude o
-                      acompanhamento familiar pelo prazo de 180 (cento e
-                      oitenta) dias.
+                <p>
+                  § 8º – Na hipótese de desistência pelos genitores -
+                  manifestada em audiência ou perante a equipe
+                  interprofissional - da entrega da criança após o
+                  nascimento, a criança será mantida com os genitores, e
+                  será determinado pela Justiça da Infância e da Juventude o
+                  acompanhamento familiar pelo prazo de 180 (cento e
+                  oitenta) dias.
                     </p>
-                    <p>
-                      § 9º – É garantido à mãe o direito ao sigilo sobre o
-                      nascimento, respeitado o disposto no art. 48 desta Lei.
+                <p>
+                  § 9º – É garantido à mãe o direito ao sigilo sobre o
+                  nascimento, respeitado o disposto no art. 48 desta Lei.
                     </p>
-                    <p>
-                      Art – 166, § 3º – São garantidos a livre manifestação de
-                      vontade dos detentores do poder familiar e o direito ao
-                      sigilo das informações.
+                <p>
+                  Art – 166, § 3º – São garantidos a livre manifestação de
+                  vontade dos detentores do poder familiar e o direito ao
+                  sigilo das informações.
                     </p>
-                    <p>
-                      § 5º – O consentimento é retratável até a data da
-                      realização da audiência especificada no § 1º deste artigo,
-                      e os pais podem exercer o arrependimento no prazo de 10
-                      (dez) dias, contado da data de prolação da sentença de
-                      extinção do poder familiar.
+                <p>
+                  § 5º – O consentimento é retratável até a data da
+                  realização da audiência especificada no § 1º deste artigo,
+                  e os pais podem exercer o arrependimento no prazo de 10
+                  (dez) dias, contado da data de prolação da sentença de
+                  extinção do poder familiar.
                     </p>
               </Card.Body>
             </Accordion.Collapse>
@@ -144,10 +135,10 @@ const Legislacao = () => {
         </Accordion>
       </Container>
 
-      <Container className=" referencias mt-5" style={{fontSize:"16px",}}>
+      <Container className=" referencias mt-5" style={{ fontSize: "16px", }}>
         <h3>
           {" "}
-          <strong style={{ color: "#952790"}}>Referências</strong>
+          <strong style={{ color: "#952790" }}>Referências</strong>
         </h3>
         <div>
           <p>
@@ -198,6 +189,6 @@ export default Legislacao;
 
 
 const ParagrafoLei = {
-  fontSize:"17px",
-  marginLeft:"1%"
+  fontSize: "17px",
+  marginLeft: "1%"
 }
