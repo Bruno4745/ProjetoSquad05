@@ -9,7 +9,7 @@ import roda from "./img/livro.jpg";
  const Historia = () => {
   return (
     <Container style={{ color: "#952790" }}>
-      <Row className>
+      <Row className="mt-3">
         <Col md={12}>
           <h1>Origem</h1>
         </Col>

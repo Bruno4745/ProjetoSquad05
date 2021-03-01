@@ -21,8 +21,8 @@ export default function SobreNos() {
     <Container style={{ color: "#952790" }}>
 
 
-      <Row className>
-        <Col md={12}>
+      <Row className="mt-3">
+        <Col md={12} >
 
           <h1>Sobre Nós</h1>
 

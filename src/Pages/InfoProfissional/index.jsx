@@ -20,13 +20,13 @@ const InfoProfissional = () => {
             </p>
           </Container>
         </Jumbotron>
-  
-        <Container fluid>
-          <Row className="justify-content-md-center">
-            <Col md={12}>
-              <Row className=" justify-content-md-center  ">
-                <Col md={7} style={BorderProfs}>
-                  <p>
+        <Container >
+          <Row >
+            <Col xs={12} sm={12} md={12} lg={12}  >
+          <Row >
+            <Col style={BorderProfs}  md={12} >
+           <Row className="justify-content-center" >
+          <p>
                     {" "}
                     Algo fundamental para o Programa é que todos os profissionais,
                     independentemente do local que ocupam na rede de atendimento,
@@ -35,10 +35,7 @@ const InfoProfissional = () => {
                     realizar as reflexões, orientações e encaminhamentos
                     necessários.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={BorderProfs}>
+                  </Row>
                   <p>
                     O primeiro elemento que deve nortear a comunidade e os
                     profissionais é o “olhar sensível” para a percepção da
@@ -47,10 +44,6 @@ const InfoProfissional = () => {
                     dúvida, desejo ou sofrimento da mulher. A sensação é de
                     invisibilidade.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={BorderProfs}>
                   <p>
                     O não julgamento é essencial para a criação de um vínculo de
                     confiança entre a mulher e a rede.
@@ -62,20 +55,12 @@ const InfoProfissional = () => {
                     acessadas pelas mulheres, devem comunicar, imediatamente, à
                     vara da infância e juventude.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={BorderProfs}>
                   <p>
                     Os encaminhamentos não caracterizam transferência de
                     responsabilidades, pelo contrário, o trabalho deverá se
                     realizar, paralelamente, entre os serviços, conforme área de
                     intervenção.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={BorderProfs}>
                   <p>
                     Muitos profissionais deixam de encaminhar ao Programa Entrega
                     Legal por perceberem que as mulheres estão muito confusas,
@@ -88,10 +73,6 @@ const InfoProfissional = () => {
                     Programa o mais cedo possível, após manifestar a intenção pela
                     entrega.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={BorderProfs}>
                   <p>
                     É importante ressaltar que, quanto mais precocemente a
                     gestante é encaminhada para o Programa, maiores serão suas
@@ -100,29 +81,32 @@ const InfoProfissional = () => {
                     ser feito diretamente e com celeridade à vara da infância e
                     juventude, do local de moradia da gestante.
                   </p>
-                </Col>
-              </Row>
+                  </Col>
+            </Row>
             </Col>
           </Row>
-        </Container>
-  
-        <Row className="justify-content-md-center mt-4">
-          <Col md={7}>
+     
+     
+
+
+   
+        <Row className="justify-content-center mt-4 ">
+          <Col md={12}>
             <h2 style={{ color: "rgb(26, 164, 136)" }}>
               <strong>Veja os pontos aos quais todos os profissionais envolvidos devem
               ficar atentos: </strong>
             </h2>
           </Col>
         </Row>
-        <Row className=" justify-content-md-center">
-          <Col md={7} style={{ color: "rgb(149, 39, 144)", fontSize: "20px" }}>
+        <Row className="justify-content-center">
+          <Col md={12} style={{ color: "rgb(149, 39, 144)", fontSize:"19px"}} >
             <ul>
               <li>
                 Uma postura não julgadora e não preconceituosa de todos os agentes
                 que vierem a atender a mulher;{" "}
               </li>
               <li>
-                Conhecimento dos diversos serviços que podem ser envulvidos no
+                Conhecimento dos diversos serviços que podem ser envolvidos no
                 atendimento;{" "}
               </li>
               <li>
@@ -156,12 +140,13 @@ const InfoProfissional = () => {
             </Row>
           </Col>
         </Row>
+        </Container>
 
         <Row className="justify-content-md-center mt-3">
             <Col md={12}>
-        <Row className=" justify-content-md-center" style={{background:'linear-gradient(90deg, #ffe76d 0%, #ffe76d 50%, #ffe76d 100%)'}}>
+        <Row className=" justify-content-md-center" >
               <Col md={8} style={Row10Profs}>
-                <h3><strong>ATENÇÃO</strong></h3>
+                <h3><strong>Atenção</strong></h3>
                 <p>
                  <strong>Para garantir o direito da gestante de ser atendida prontamente
                   pela Vara da Infância e Juventude, o Estatuto da Criança e do
@@ -180,10 +165,9 @@ const InfoProfissional = () => {
 
 
 
-        <Row className="justify-content-md-center mt-4"  >
-            <Col md={8}>
-              <Row className=" justify-content-md-center" >
-                <Col md={7} style={Border2Profs}>
+        <Row className="justify-content-center mt-4"  >
+      
+                <Col xs={12} sm={12} md={12} lg={10} style={Border2Profs}>
                   <h3 style={{ color: "rgb(26, 164, 136)" }}><strong>Aos profissionais da Vara da Infância e Juventude</strong></h3>
                   <p>
                     {" "}
@@ -192,10 +176,7 @@ const InfoProfissional = () => {
             de convencê-la a entregar o filho em adoção, nem de persuadi-la a
             ficar com a criança.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center" >
-                <Col md={7} style={Border2Profs}>
+            
                   <h3 style={{ color: "rgb(26, 164, 136)" }}><strong>Aos profissionais da Saúde</strong></h3>
                   <p>
                     {" "}
@@ -206,10 +187,7 @@ const InfoProfissional = () => {
             nascimento, bem como o tipo de parto mais adequado ao caso, conforme
             a condição física e emocional de cada mulher.
                   </p>
-                </Col>
-              </Row>
-              <Row className=" justify-content-md-center ">
-                <Col md={7} style={Border2Profs}>
+               
                   <h3 style={{ color: "rgb(26, 164, 136)" }}><strong>Aos profissionais da Assistência Social e Psicólogos</strong></h3>
                   <p>
                     {" "}
@@ -231,8 +209,6 @@ const InfoProfissional = () => {
                 </Col>
               </Row>
 
-              </Col>
-              </Row>
 
       </>
     )
@@ -241,27 +217,26 @@ const InfoProfissional = () => {
 export default InfoProfissional;
 
 const BorderProfs = {
-    borderRight: "10px solid #ffe76d",
-    borderLeft: "10px solid #ffe76d",
-    borderRadius: "25px",
-    color: "rgb(149, 39, 144)",
-    fontSize: "20px",
-    
+    borderRight: "6px solid #ffe76d",
+    borderRadius: "5px",
+    color: "#952790",
+    fontSize:"19px"
   };
 
   const Border2Profs ={
-    borderBottom: "15px solid rgb(26, 164, 136)",
-    borderLeft: "15px solid rgb(26, 164, 136)",
-    borderRadius: "50px 50px",
-    fontSize: "20px",
-    background:"#ffe76d",
+    borderBottom: "15px solid #ffe76d",
+    borderLeft: "15px solid #ffe76d",
+    borderRadius: "5px",
+    color: "#952790",
+    fontSize:"19px"
     
 
   }
   
   const Row10Profs = {
-    borderLeft: "15px solid white",
-    borderRadius: "50px 50px",
+    borderLeft: "15px solid #ffe76d",
+    borderRadius: "5px",
     color:'black',
     fontSize:"22px"
+
   }

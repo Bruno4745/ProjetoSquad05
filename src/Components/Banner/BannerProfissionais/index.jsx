@@ -1,5 +1,5 @@
 import React from "react";
-import ImgProfissionais from "./img/profissionais.png";
+import ImgProfissionais from "./img/profissionais.jpeg";
 import { Card } from "react-bootstrap";
 
 const BannerProfissionais = () => {

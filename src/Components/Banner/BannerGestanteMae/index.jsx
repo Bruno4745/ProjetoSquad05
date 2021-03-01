@@ -1,11 +1,11 @@
 import React from "react";
-import ImgGestante from "./img/gestante.jpg";
+import ImgBebe from "./img/bebemaes.jpeg";
 import { Card } from "react-bootstrap";
 
 const BannerGestante = () => {
   return (
       <Card.Img
-        src={ImgGestante}
+        src={ImgBebe}
         alt="Card image"
         className="img responsive"
         style={{ width: "100%", height: "100%"}}
