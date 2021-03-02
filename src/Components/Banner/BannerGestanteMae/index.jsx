@@ -1,15 +1,22 @@
 import React from "react";
-import ImgBebe from "./img/bebemaes.jpeg";
-import { Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import './gestante.css';
+
 
 const BannerGestante = () => {
   return (
-      <Card.Img
-        src={ImgBebe}
-        alt="Card image"
-        className="img responsive"
-        style={{ width: "100%", height: "100%"}}
-      />
+    <>
+      <Container className="containerBanner">
+        <h1><span>INFORMAÇÕES À </span><strong>GESTANTE/ MÃE</strong></h1>
+        <div className="underline"></div>
+        <div className="bannerGestante" />
+       
+      </Container>
+        
+    </>
   );
 };
+
 export default BannerGestante;
+
+

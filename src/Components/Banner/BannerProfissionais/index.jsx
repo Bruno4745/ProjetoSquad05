@@ -1,17 +1,22 @@
 import React from "react";
-import ImgProfissionais from "./img/profissionais.jpeg";
-import { Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import './profissionais.css';
+
 
 const BannerProfissionais = () => {
   return (
-    <Card.Img
-      src={ImgProfissionais}
-      alt="Card image"
-      className="img responsive"
-      style={{ width: "100%",height:"100%" }}
-    />
-    
+    <>
+      <Container className="containerBanner">
+        <h1><span>INFORMAÇÕES AOS </span><strong>PROFISSIONAIS</strong></h1>
+        <div className="underline"></div>
+        <div className="bannerProfissionais" />
+       
+      </Container>
+        
+    </>
   );
 };
 
 export default BannerProfissionais;
+
+
