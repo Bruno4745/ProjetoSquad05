@@ -33,11 +33,11 @@ const Home = () => {
 
         <Row className="justify-content-md-center">
 
-          <Col md={12} style={{ color: "#952790", fonteFamyli: 'Segoe UI' }}>
+          <Col md={12} style={{color:"rgb(71,74,81)"}}>
 
-            <h2>ENTREGAR É DIFERENTE DE ABANDONAR</h2>
+            <h2 style={{ color: "#952790" }}>ENTREGAR É DIFERENTE DE ABANDONAR</h2>
 
-            <Row className="justify-content-md-start">
+            <Row className="justify-content-md-start" style={{color:"rgb(71,74,81)"}}>
               <Col style={homeRow1} md={4}>
                 <p>Entregar um bebê à Justiça (ao Fórum) para adoção é um direito garantido por lei. Entregar é diferente de abandonar. A entrega do bebê para a Justiça não é crime.
                   </p>

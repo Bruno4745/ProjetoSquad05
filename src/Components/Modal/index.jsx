@@ -39,7 +39,7 @@ const ModalGestante = () => {
         </Modal.Header>
         <Modal.Body>
           {" "}
-          <ul  style={{ color: "#952790" }}>
+          <ul  style={{color:"rgb(71,74,81)"}}>
             <li>
               <p>
                 O direito da criança em permanecer em sua família de origem e,

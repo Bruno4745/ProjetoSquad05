@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap'
+
 const Contatos = () => {
 
   // Definindo um state vazio
@@ -33,9 +34,9 @@ const Contatos = () => {
 
     return (
       <>
-          <h2>Contatos</h2>
-          <Form onSubmit={enviaMensagem} className="my-2">
-            <Form.Group controlId="nome">
+          <h2 style={{ color: "#952790" }}>Contatos</h2>
+          <Form onSubmit={enviaMensagem} className="my-2" style={textGrey}>
+            <Form.Group controlId="nome" style={textGrey}>
               <Form.Label>Nome: </Form.Label>
               <Form.Control name="nome" type="text" placeholder="Digite seu nome" onChange={handleChange} />
             </Form.Group>
@@ -55,3 +56,8 @@ const Contatos = () => {
 };
 
 export default Contatos;
+
+
+const textGrey = {
+  color:"rgb(71,74,81)"
+}

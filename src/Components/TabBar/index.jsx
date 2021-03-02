@@ -11,7 +11,7 @@ const TabBar = () => {
 
     <Tab.Container defaultActiveKey="second">
       
-      <Row style={{ color: "#952790" }}>
+      <Row >
         
         <Col sm={12} id="colTab" >
           <Nav id="navTab" >

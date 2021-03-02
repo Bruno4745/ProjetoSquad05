@@ -35,7 +35,7 @@ const GestanteMae = () => {
               <h2 style={{ color: "#952790" }}>
                 <strong>Onde Buscar Atendimento</strong>{" "}
               </h2>
-              <p>
+              <p style={{ color: "" }}>
                 Procurar um profissional nas rede de atendimento , nas áreas da
                 assistência social, saúde, Conselho Tutelar, Ministério Público,
                 Defensoria Pública, Poder Judiciário e demais instituições,
@@ -117,9 +117,9 @@ const GestanteMae = () => {
 
         <Row
           className="mt-8 justify-content-md-center"
-          style={{ color: "#952790" }}
+          
         >
-          <Col md={8}>
+          <Col md={8} style={textGrey}>
             <ModalGestante />
           </Col>
         </Row>
@@ -133,6 +133,10 @@ export default GestanteMae;
 const RowsGestante = {
   borderRight: "6px solid #ffe76d",
   borderRadius: "5px",
-  color: "#952790",
   fontSize: "19px",
+  color:"rgb(71,74,81)"
 };
+
+const textGrey = {
+  color:"rgb(71,74,81)"
+}

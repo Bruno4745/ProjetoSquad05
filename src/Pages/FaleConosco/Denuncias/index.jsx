@@ -35,8 +35,8 @@ const Denuncia = () => {
     return(
         <>
        
-          <h2>Denúncia</h2>
-          <Form onSubmit={enviaDenuncia} className="my-2">
+          <h2 style={{ color: "#952790" }}>Denúncia</h2>
+          <Form onSubmit={enviaDenuncia} className="my-2" style={textGrey} >
             <Form.Group controlId="nome">
               <Form.Label>Nome do estabelecimento: </Form.Label>
               <Form.Control name="nome_do_estabelecimento" type="text" placeholder="Ex. Hospital/UBS/UPA" onChange={handleChange} />
@@ -62,3 +62,7 @@ const Denuncia = () => {
 };
 
 export default Denuncia;
+
+const textGrey = {
+  color:"rgb(71,74,81)"
+}

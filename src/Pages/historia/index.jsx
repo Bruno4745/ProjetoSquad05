@@ -21,7 +21,7 @@ import roda from "./img/livro.jpg";
         </Col>
         <Col xs={12} sm={12} md={9} lg={6}>
           <Row style={hisoriaFilhosdaRoda}>
-            <h2>Filhos da Roda</h2>
+            <h2 style={{ color: "#952790" }}>Filhos da Roda</h2>
             <p>
               A roda dos expostos sempre esteve ligada às instituições caridosas
               (abadias, mosteiros e irmandades beneficentes). Nela eram deixadas
@@ -61,7 +61,7 @@ import roda from "./img/livro.jpg";
       <Row className="mt-2" style={historiaContextoSocial}>
         <Col xs={12} sm={12} md={9} lg={6}>
           <Row>
-            <h2>Contexto Social</h2>
+            <h2 style={{ color: "#952790" }}>Contexto Social</h2>
 
             <li>
               (...) Num cenário de generalizada pobreza como este, em que o
@@ -95,7 +95,7 @@ import roda from "./img/livro.jpg";
       </Row>
 
       <Row className="justify-content-md-center mt-5">
-        <Col md={12}>
+        <Col md={12} style={{color: "rgb(71,74,81)"}} >
           <li>
             (...) Os pequenos abandonados, recolhidos ao Hospital de Caridade,
             eram então encaminhados a amas de leite e, posteriormente, a amas
@@ -132,7 +132,7 @@ import roda from "./img/livro.jpg";
       </h3>
       <div>
         <a
-          style={{ textDecoration: "none", color: "#952790", fontSize: "16px" }}
+          style={{ textDecoration: "none", color: "rgb(71,74,81)", fontSize: "16px" }}
           href="https://www.santacasasp.org.br/portal/site/quemsomos/museu/pub/10956/a-roda-dos-expostos-1825-1961"
           target="_blank "
           rel="noreferrer"
@@ -150,8 +150,10 @@ export default Historia
 const hisoriaFilhosdaRoda = {
   borderRight: "6px solid #ffe76d",
   borderRadius: "5px",
+  color:"rgb(71,74,81)"
 };
 
 const historiaContextoSocial = {
   margin: "10px 0",
+  color:"rgb(71,74,81)"
 };

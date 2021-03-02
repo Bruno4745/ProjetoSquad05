@@ -146,7 +146,7 @@ const Legislacao = () => {
               href="http://www.adotar.tjsp.jus.br/Home/Contato"
               target="_blank "
               rel="noreferrer"
-              style={{ textDecoration: "none", color: "#952790" }}
+              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
             >
               Informações sobre Adoção no Tribunal de Justiça de São Paulo
             </a>
@@ -157,7 +157,7 @@ const Legislacao = () => {
                 href="http://www.neca.org.br/wp-content/uploads/cartilha%20-%20politica%20de%20atencao%20a%20gestante.pdf"
                 target="_blank "
                 rel="noreferrer"
-                style={{ textDecoration: "none", color: "#952790" }}
+                style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
               >
                 Cartilha Política de Atenção à Gestante
               </a>
@@ -166,7 +166,7 @@ const Legislacao = () => {
               href="http://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none", color: "#952790" }}
+              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
             >
               Estatuto da Criança e do Adolescente - LEI 8.069/90
             </a>
@@ -174,7 +174,7 @@ const Legislacao = () => {
           <p>
             <a
               href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/4230256/do1e-2018-02-23-lei-n-13-509-de-22-de-novembro-de-2017-4230252"
-              style={{ textDecoration: "none", color: "#952790" }}
+              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
             >
               Dispõe sobre adoção -LEI 13.509/17
             </a>
@@ -190,5 +190,7 @@ export default Legislacao;
 
 const ParagrafoLei = {
   fontSize: "17px",
-  marginLeft: "1%"
+  marginLeft: "1%",
+  color:"rgb(71,74,81)"
 }
+

@@ -38,8 +38,8 @@ export default function SobreNos() {
         </Col>
         <Col xs={12} sm={12} md={9} lg={6}>
 
-          <Row style={sobreNosQuemSomos} >
-            <h2>Quem Somos</h2>
+          <Row style={sobreNosQuemSomos}  >
+            <h2 style={{ color: "#952790" }}>Quem Somos</h2>
             <p> Somos um grupo de estudante da Recode Pro, com formação em
             desenvolvimento Full Stack, e temos como objetivo atender a um dos
             objetivos de desenvolvimento sustentável da ONU, dentro do tema saúde
@@ -60,8 +60,8 @@ export default function SobreNos() {
       <Row style={SobreNosJustificativa}>
 
 
-        <Col md={6}>
-          <h2>Justificativas</h2>
+        <Col md={6} >
+          <h2 style={{ color: "#952790" }}>Justificativas</h2>
           <li>Abandono de crianças recém-nascidas;</li>
           <li> A existência de grande número de adoções irregulares;</li>
         </Col>
@@ -80,8 +80,8 @@ export default function SobreNos() {
 
       <Row style={SobreNosObjetivos}>
 
-        <h2>Objetivos</h2>
-        <Col md={12}>
+        <h2 style={{ color: "#952790" }}>Objetivos</h2>
+        <Col md={12} style={textGrey}>
           <li>
             Orientar técnicos que trabalham na Rede de Proteção (CREAS, CRAS,
             Hospitais Públicos, Postos de Saúde, entidades de acolhimento, CAPS,
@@ -91,7 +91,7 @@ export default function SobreNos() {
         </li>
         </Col>
 
-        <Col md={6}>
+        <Col md={6} style={textGrey}>
 
           <li>
             Informar aos pais que é possível e está prevista em lei a entrega
@@ -102,7 +102,7 @@ export default function SobreNos() {
         </li>
         </Col>
 
-        <Col md={6}>
+        <Col md={6} style={textGrey}>
           <li>
             Conscientizar as pessoas que têm interesse em adotar quanto ao
             procedimento previsto em lei para a adoção e sobre a importância de
@@ -119,8 +119,8 @@ export default function SobreNos() {
       <Row className='mt-2' style={SobreNosParceiros}>
         <Col xs={12} sm={12} md={9} lg={6}>
 
-          <Row>
-            <h2>Parceiros</h2>
+          <Row style={textGrey}>
+            <h2 style={{ color: "#952790" }}>Parceiros</h2>
             <li>
               Dr. antonio Carlos Berlini - Presidente da AGASESP - Associação dos
               grupos de apoio à adoção do Estado de São Paulo
@@ -128,7 +128,7 @@ export default function SobreNos() {
             <li>Grupo de Apoio a Adoção de Mauá.</li>
           </Row>
 
-          <Row>
+          <Row style={textGrey} >
             <li>
               Madrinha do Projeto Sônia Borges - Somos eternamente gratos por nos
               apresentar este tema, e por saber transmitir com tanto carinho o
@@ -143,9 +143,9 @@ export default function SobreNos() {
 
       </Row>
 
-      <h2>Mais Sobre Nós</h2>
+      <h2 style={{ color: "#952790" }}>Mais Sobre Nós</h2>
 
-      <Row className='w-100 mx-auto'>
+      <Row className='w-100 mx-auto' style={textGrey}>
         {squad &&
           squad.map((item) => (
             <Squad
@@ -167,11 +167,12 @@ export default function SobreNos() {
 
 const sobreNosQuemSomos = {
   borderRight: '6px solid #ffe76d',
-  borderRadius: '5px'
+  borderRadius: '5px',
+  color:"rgb(71,74,81)"
 }
 
 const SobreNosJustificativa = {
-  color: '#ffffff',
+  color:"rgb(71,74,81)",
   background: '#02977c',
   margin: '10px 0',
   padding: '10px',
@@ -187,4 +188,8 @@ const SobreNosObjetivos = {
 
 const SobreNosParceiros = {
   margin: '10px 0',
+}
+
+const textGrey = {
+  color:"rgb(71,74,81)"
 }
