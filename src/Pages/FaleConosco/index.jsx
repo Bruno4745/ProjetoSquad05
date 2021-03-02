@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col} from 'react-bootstrap'
 import TabBar from '../../Components/TabBar';
 import BannerFaleConosco from '../../Components/Banner/BannerFaleConosco';
+
 import "./styles.css";
 
 const FaleConosco = () => {
@@ -11,7 +12,7 @@ const FaleConosco = () => {
      <>
         <Row>
           <Col md={12}>
-             <BannerFaleConosco /> 
+             <BannerFaleConosco />
           </Col>
         </Row>
         <Row className="justify-content-md-center">

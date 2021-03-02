@@ -2,13 +2,13 @@ import React from "react";
 import { Jumbotron, Container, Accordion, Card } from "react-bootstrap";
 import './legislacao.css';
 
-// import eca from "./eca.png";
+
 
 const Legislacao = () => {
   return (
     <>
       <Container className="containerBanner">
-        <h1>O QUE DIZ A <strong>LEGISLAÇÃO</strong></h1>
+        <h1><span>O QUE DIZ A </span><strong>LEGISLAÇÃO</strong></h1>
         <div className="underline"></div>
         <div className="bannerLegislacao" />
         <p>Estatuto da criança e do adolescente</p>

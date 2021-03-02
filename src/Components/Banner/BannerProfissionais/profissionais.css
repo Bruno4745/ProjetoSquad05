@@ -1,7 +1,7 @@
 .containerBanner {
   padding: 20px 0;
 }
-.bannerLegislacao {
+.bannerProfissionais {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -27,21 +27,21 @@
 }
 
 @media (min-width: 990px) {
-  .bannerLegislacao {
+  .bannerProfissionais {
     height: 20rem;
-    background-image: url(./eca-svg-1024+.svg);
+    background-image: url(./svg-1024+.svg);
   }
 }
 @media (max-width: 989px) {
-  .bannerLegislacao {
+  .bannerProfissionais {
     height: 18rem;
-    background-image: url(./eca-svg-1024.svg);
+    background-image: url(./svg-1024.svg);
   }
 }
 @media (max-width: 700px) {
-  .bannerLegislacao {
+  .bannerProfissionais {
     height: 15rem;
-    background-image: url(./eca-svg-768.svg);
+    background-image: url(./svg-768.svg);
   }
   .containerBanner h1 {
     font-size: 1.5rem;
