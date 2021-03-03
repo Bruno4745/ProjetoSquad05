@@ -1,8 +1,18 @@
 .icone-chat {
-    width: 65px;
-    height: 65px;
-    z-index: 199;
-    position: fixed;
-    top: 85vh;
-    right: 5vw;
-  }
+  width: 60px;
+  height: 60px;
+  z-index: 199;
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+}
+
+#icone-chat2 {
+width: 255px;
+height: 295px;
+z-index: 198;
+position: fixed;
+bottom: 12vh;
+right: 1vw;
+display: none;
+}

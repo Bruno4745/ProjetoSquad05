@@ -1,17 +1,28 @@
 import React from 'react';
-import chat from './chat-rosaTT.png';
+import chat from './chat-roxoTT.png';
 import "./style.css";
 
 function Chat() {
 
-  const abrir = () => {
-    window.open('https://chat-recomecar.herokuapp.com/','chat','resizable,height=460,width=570');
+  const exibirChat = (evento) => {
+    evento.preventDefault();
+    let elemento = document.getElementById('icone-chat2');
+    console.log(elemento);
+    if(elemento.style.display == "none"){
+      elemento.style.display = "block"
+    } else {
+      elemento.style.display = "none"
+    }
   }
 
     return (
-        <a href="#" onClick={abrir} >
+      <>
+        <a href="#" onClick={exibirChat} >
           <img className="icone-chat" src={chat} alt="Chat"/>
         </a>
+
+          <iframe id="icone-chat2" src="https://chat-recomecar.herokuapp.com/"></iframe>
+      </>
     )
 }
 
