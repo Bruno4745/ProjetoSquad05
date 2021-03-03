@@ -38,11 +38,11 @@ const Contatos = () => {
           <Form onSubmit={enviaMensagem} className="my-2" style={textGrey}>
             <Form.Group controlId="nome" style={textGrey}>
               <Form.Label>Nome: </Form.Label>
-              <Form.Control name="nome" type="text" placeholder="Digite seu nome" onChange={handleChange} />
+              <Form.Control name="nome" type="text" placeholder="Digite seu nome" onChange={handleChange} required />
             </Form.Group>
             <Form.Group controlId="email">
               <Form.Label>Email: </Form.Label>
-              <Form.Control name="email" type="email" placeholder="nome@email.com.br" onChange={handleChange} />
+              <Form.Control name="email" type="email" placeholder="nome@email.com.br" onChange={handleChange} required />
             </Form.Group>
             <Form.Group controlId="mensagem">
               <Form.Label>Mensagem: </Form.Label>

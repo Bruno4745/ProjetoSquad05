@@ -39,19 +39,19 @@ const Denuncia = () => {
           <Form onSubmit={enviaDenuncia} className="my-2" style={textGrey} >
             <Form.Group controlId="nome">
               <Form.Label>Nome do estabelecimento: </Form.Label>
-              <Form.Control name="nome_do_estabelecimento" type="text" placeholder="Ex. Hospital/UBS/UPA" onChange={handleChange} />
+              <Form.Control name="nome_do_estabelecimento" type="text" placeholder="Ex. Hospital/UBS/UPA" onChange={handleChange} required />
             </Form.Group>
             <Form.Group controlId="endereco">
               <Form.Label>Endereço: </Form.Label>
-              <Form.Control name="endereco" type="endereco" placeholder="Ex. Rua..." onChange={handleChange} />
+              <Form.Control name="endereco" type="endereco" placeholder="Ex. Rua..." onChange={handleChange} required />
             </Form.Group>
             <Form.Group controlId="horario">
               <Form.Label>Horário do atendimento:</Form.Label>
-              <Form.Control name="horario" type="text" onChange={handleChange} />
+              <Form.Control name="horario" type="text" placeholder="Ex. 12:00" onChange={handleChange} required />
             </Form.Group>
             <Form.Group controlId="mensagem">
               <Form.Label>O que ocorreu? </Form.Label>
-              <Form.Control name="mensagem" as="textarea" rows={5} placeholder="Descreva como foi o atendimento" onChange={handleChange} />
+              <Form.Control name="mensagem" as="textarea" rows={5} placeholder="Descreva como foi o atendimento" onChange={handleChange} required />
             </Form.Group>
             
             <button className="btn-purple" type="submit">Enviar</button>
