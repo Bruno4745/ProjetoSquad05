@@ -39,7 +39,7 @@ export default function SobreNos() {
         <Col xs={12} sm={12} md={9} lg={6}>
 
           <Row style={sobreNosQuemSomos}  >
-            <h2 style={{ color: "#952790" }}>Quem Somos</h2>
+            <h4 style={{ color:"rgb(2, 155, 124)", textAlign: "right" }}>Quem Somos</h4>
             <p> Somos um grupo de estudante da Recode Pro, com formação em
             desenvolvimento Full Stack, e temos como objetivo atender a um dos
             objetivos de desenvolvimento sustentável da ONU, dentro do tema saúde
@@ -60,12 +60,12 @@ export default function SobreNos() {
       <Row style={SobreNosJustificativa}>
 
 
-        <Col md={6} >
-          <h2 style={{ color: "#952790" }}>Justificativas</h2>
+        <Col md={6} lg={6} >
+          <h3 style={{ color: "#fff" }}>Justificativas</h3>
           <li>Abandono de crianças recém-nascidas;</li>
           <li> A existência de grande número de adoções irregulares;</li>
         </Col>
-        <Col md={6}>
+        <Col md={6} lg={6}>
           <li>
             Pais que não querem ou não têm condições de cuidar de seus filhos, ao
             invés de entregarem os bebês ou as crianças na Vara da Infância e
@@ -80,7 +80,7 @@ export default function SobreNos() {
 
       <Row style={SobreNosObjetivos}>
 
-        <h2 style={{ color: "#952790" }}>Objetivos</h2>
+        <h4 style={{ color: "rgb(2, 155, 124)" }}>Objetivos</h4>
         <Col md={12} style={textGrey}>
           <li>
             Orientar técnicos que trabalham na Rede de Proteção (CREAS, CRAS,
@@ -120,7 +120,7 @@ export default function SobreNos() {
         <Col xs={12} sm={12} md={9} lg={6}>
 
           <Row style={textGrey}>
-            <h2 style={{ color: "#952790" }}>Parceiros</h2>
+            <h4 style={{ color: "#952790" }}>Parceiros</h4>
             <li>
               Dr. antonio Carlos Berlini - Presidente da AGASESP - Associação dos
               grupos de apoio à adoção do Estado de São Paulo
@@ -143,7 +143,7 @@ export default function SobreNos() {
 
       </Row>
 
-      <h2 style={{ color: "#952790" }}>Mais Sobre Nós</h2>
+      <h3 style={{ color: "#952790" }}>Mais Sobre Nós</h3>
 
       <Row className='w-100 mx-auto' style={textGrey}>
         {squad &&
@@ -166,14 +166,13 @@ export default function SobreNos() {
 
 
 const sobreNosQuemSomos = {
-  borderRight: '6px solid #ffe76d',
-  borderRadius: '5px',
-  color:"rgb(71,74,81)"
+  borderRight: '3px solid rgb(2, 155, 124)',
+    color:"rgb(166,166,166)"
 }
 
 const SobreNosJustificativa = {
-  color:"rgb(71,74,81)",
-  background: '#02977c',
+  color:"#fff",
+  background: 'rgb(2, 155, 124)',
   margin: '10px 0',
   padding: '10px',
   borderRadius: '5px'
@@ -182,8 +181,8 @@ const SobreNosJustificativa = {
 const SobreNosObjetivos = {
   margin: '10px 0',
   padding: '10px',
-  borderLeft: '6px solid #ffe76d',
-  borderRadius: '5px'
+  borderLeft: '3px solid rgb(2, 155, 124)',
+  
 };
 
 const SobreNosParceiros = {
@@ -191,5 +190,5 @@ const SobreNosParceiros = {
 }
 
 const textGrey = {
-  color:"rgb(71,74,81)"
+  color:"rgb(166,166,166)"
 }

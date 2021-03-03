@@ -34,7 +34,7 @@ const Contatos = () => {
 
     return (
       <>
-          <h2 style={{ color: "#952790" }}>Contatos</h2>
+          <h3 style={{color:"rgb(2,155,124)"}}>Contatos</h3>
           <Form onSubmit={enviaMensagem} className="my-2" style={textGrey}>
             <Form.Group controlId="nome" style={textGrey}>
               <Form.Label>Nome: </Form.Label>
@@ -59,5 +59,5 @@ export default Contatos;
 
 
 const textGrey = {
-  color:"rgb(71,74,81)"
+  color:"rgb(166, 166, 166)"
 }

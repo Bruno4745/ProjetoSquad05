@@ -15,10 +15,10 @@ const Legislacao = () => {
       </Container>
 
       <Container>
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0" className="pointer">
-              <h6 style={{ color: "#952790", fontSize: "18px" }}>
+              <h6 style={{ color: "rgb(218, 112, 214)", fontSize: "18px" }}>
                 <strong>Constituição Federal </strong>
               </h6>
             </Accordion.Toggle>
@@ -43,7 +43,7 @@ const Legislacao = () => {
 
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1" className="pointer">
-              <h6 style={{ color: "#952790", fontSize: "18px" }}>
+              <h6 style={{ color: "rgb(218, 112, 214)", fontSize: "18px" }}>
                 <strong>Estatuto da Criança e do Adolescente</strong>
               </h6>
             </Accordion.Toggle>
@@ -67,7 +67,7 @@ const Legislacao = () => {
 
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2" className="pointer">
-              <h6 style={{ color: "#952790", fontSize: "18px" }}>
+              <h6 style={{ color: "rgb(218, 112, 214)", fontSize: "18px" }}>
                 <strong>Entrega legal - Lei nº 13.509, de 2017</strong>
               </h6>
             </Accordion.Toggle>
@@ -136,17 +136,17 @@ const Legislacao = () => {
       </Container>
 
       <Container className=" referencias mt-5" style={{ fontSize: "16px", }}>
-        <h3>
+        <h4>
           {" "}
-          <strong style={{ color: "#952790" }}>Referências</strong>
-        </h3>
+          <strong style={{color:"rgb(2,155,124)"}}>Referências</strong>
+        </h4>
         <div>
           <p>
             <a
               href="http://www.adotar.tjsp.jus.br/Home/Contato"
               target="_blank "
               rel="noreferrer"
-              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
+              style={{color:"rgb(2,155,124)"}}
             >
               Informações sobre Adoção no Tribunal de Justiça de São Paulo
             </a>
@@ -157,7 +157,7 @@ const Legislacao = () => {
                 href="http://www.neca.org.br/wp-content/uploads/cartilha%20-%20politica%20de%20atencao%20a%20gestante.pdf"
                 target="_blank "
                 rel="noreferrer"
-                style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
+                style={{color:"rgb(2,155,124)"}}
               >
                 Cartilha Política de Atenção à Gestante
               </a>
@@ -166,7 +166,7 @@ const Legislacao = () => {
               href="http://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
+              style={{color:"rgb(2,155,124)"}}
             >
               Estatuto da Criança e do Adolescente - LEI 8.069/90
             </a>
@@ -174,7 +174,7 @@ const Legislacao = () => {
           <p>
             <a
               href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/4230256/do1e-2018-02-23-lei-n-13-509-de-22-de-novembro-de-2017-4230252"
-              style={{ textDecoration: "none", color:"rgb(71,74,81)" }}
+              style={{color:"rgb(2,155,124)" }}
             >
               Dispõe sobre adoção -LEI 13.509/17
             </a>
@@ -189,8 +189,7 @@ export default Legislacao;
 
 
 const ParagrafoLei = {
-  fontSize: "17px",
-  marginLeft: "1%",
-  color:"rgb(71,74,81)"
+   marginLeft: "1%",
+  color:"rgb(166,166,166)"
 }
 

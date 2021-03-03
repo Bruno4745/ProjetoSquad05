@@ -11,12 +11,9 @@ const InfoProfissional = () => {
 
       <Jumbotron fluid id="jumbotron">
         <Container>
-          <h1>
-            {" "}
-            <strong>Informações aos Profissionais</strong>
-          </h1>
+         
           <br />
-          <p style={{ fontSize: "23px" }}>
+          <p style={{ fontSize: "20px" }}>
             Aqui você vai encontrar orietações sobre a{" "}
             <strong>entrega voluntária</strong> aos profissionais independente
             da ocupação na rede de atendimento.
@@ -91,16 +88,16 @@ const InfoProfissional = () => {
 
         <Row className="justify-content-center mt-4 ">
           <Col md={12}>
-            <h2 style={{ color: "rgb(26, 164, 136)" }}>
+            <h3 style={{ color: "rgb(26, 164, 136)" }}>
               <strong>
                 Veja os pontos aos quais todos os profissionais envolvidos devem
                 ficar atentos:{" "}
               </strong>
-            </h2>
+            </h3>
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col md={12} style={{ color:"rgb(71,74,81)", fontSize: "19px" }}>
+          <Col md={12} style={{ color:"rgb(166, 166, 166)", fontSize: "19px" }}>
             <ul>
               <li>
                 Uma postura não julgadora e não preconceituosa de todos os
@@ -148,11 +145,11 @@ const InfoProfissional = () => {
         <Col md={12}>
           <Row className=" justify-content-md-center">
             <Col md={8} style={Row10Profs}>
-              <h3>
+              <h3 style={{ color:"rgb(224, 89, 89)"}}>
                 <strong>Atenção</strong>
               </h3>
-              <p>
-                <strong>
+              <p style={{ color:"rgb(166, 166, 166)", borderLeft: "5px solid rgb(224, 89, 89)", padding:"15px" }}>
+                
                   Para garantir o direito da gestante de ser atendida
                   prontamente pela Vara da Infância e Juventude, o Estatuto da
                   Criança e do Adolescente prevê uma multa de R$ 1.000,00 a R$
@@ -163,7 +160,7 @@ const InfoProfissional = () => {
                   judiciária caso de que tenha conhecimento, envolvendo mãe ou
                   gestante interessada em entregar seu filho para adoção. (ECA,
                   art. 258-B).
-                </strong>
+                
               </p>
             </Col>
           </Row>
@@ -172,9 +169,9 @@ const InfoProfissional = () => {
 
       <Row className="justify-content-center mt-4">
         <Col xs={12} sm={12} md={12} lg={10} style={Border2Profs}>
-          <h3 style={{ color: "rgb(26, 164, 136)" }}>
+          <h4 style={{ color: "rgb(149, 39, 144)" }}>
             <strong>Aos profissionais da Vara da Infância e Juventude</strong>
-          </h3>
+          </h4>
           <p>
             {" "}
             Já os profissionais que atenderão a gestante na vara da infância e
@@ -183,10 +180,10 @@ const InfoProfissional = () => {
             ficar com a criança.
           </p>
 
-          <h3 style={{ color: "rgb(26, 164, 136)" }}>
+          <h4 style={{ color: "rgb(255, 219, 40)", textAlign: "Center" }}>
             <strong>Aos profissionais da Saúde</strong>
-          </h3>
-          <p>
+          </h4>
+          <p >
             {" "}
             É importante que o Judiciário comunique às maternidades de
             referência para que a equipe multiprofissional se prepare para o
@@ -196,12 +193,12 @@ const InfoProfissional = () => {
             a condição física e emocional de cada mulher.
           </p>
 
-          <h3 style={{ color: "rgb(26, 164, 136)" }}>
+          <h4 style={{ color: "rgb(26, 164, 136)", textAlign: "right" }}>
             <strong>
               Aos profissionais da Assistência Social e Psicólogos
             </strong>
-          </h3>
-          <p>
+          </h4>
+          <p style= {Border3Profs}>
             {" "}
             Um apoio importante para a gestante nesse período é seu
             acompanhamento psicológico na rede de atendimento, o que ocorrerá
@@ -227,23 +224,20 @@ const InfoProfissional = () => {
 export default InfoProfissional;
 
 const BorderProfs = {
-  borderRight: "6px solid #ffe76d",
-  borderRadius: "5px",
-  color:"rgb(71,74,81)",
-  fontSize: "19px",
-};
+  borderRight: "3px solid #ffe76d",
+  color:"rgb(166,166,166)",
+  };
 
 const Border2Profs = {
-  borderBottom: "15px solid #ffe76d",
-  borderLeft: "15px solid #ffe76d",
-  borderRadius: "5px",
-  color:"rgb(71,74,81)",
-  fontSize: "19px",
-};
+  color:"rgb(166,166,166)",
+  borderlext: "3px solid #ffe76d",
+ };
 
 const Row10Profs = {
-  borderLeft: "15px solid #ffe76d",
-  borderRadius: "5px",
-  color: "black",
-  fontSize: "22px",
+  color: "rgb(166,166,166)",
 };
+
+const Border3Profs = {
+  borderRight: "3px solid rgb(26, 164, 136)",
+  color:"rgb(166,166,166)",
+  };

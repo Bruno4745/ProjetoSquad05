@@ -19,23 +19,20 @@ const TabBar = () => {
               <Nav.Link eventKey="first" className="navlink">Contato</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second" className="navlink">Denúncia</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
               <Nav.Link eventKey="third" className="navlink">Depoimento</Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
-              <Nav.Link eventKey="fourth" className="navlink">Chat</Nav.Link>
-            </Nav.Item> */}
+            <Nav.Item>
+              <Nav.Link eventKey="second" className="navlink">Denúncia</Nav.Link>
+            </Nav.Item>
+          
           </Nav>
         </Col>
-
 
         <Col sm={12}>
           <Tab.Content>
             <Tab.Pane eventKey="first">
 
-              <Contatos />
+            <Contatos />
 
             </Tab.Pane>
             <Tab.Pane eventKey="second">
@@ -45,7 +42,7 @@ const TabBar = () => {
             </Tab.Pane>
             <Tab.Pane eventKey="third">
 
-              <Depoimentos />
+            <Depoimentos />
 
             </Tab.Pane>
             {/* <Tab.Pane eventKey="fourth">

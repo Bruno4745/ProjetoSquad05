@@ -45,7 +45,7 @@ const Depoimentos = () => {
 
     return(
         <>
-            <h2 style={textGrey}>Deixe seu depoimento!</h2>
+            <h4 style={{color:"rgb(2,155,124)"}}>Deixe seu depoimento!</h4>
             <Form onSubmit={enviaDepoimento} style={textGrey}>
                 <Form.Group style={textGrey}>
                     <Form.Control id="depoimento" name="depoimento" as="textarea" rows={5} placeholder="Escreva uma mensagem aqui" onChange={handleChange} required />
@@ -54,7 +54,7 @@ const Depoimentos = () => {
                     <button className="btn-purple" type="submit">Enviar</button>
                 </Form.Group>
             </Form>
-            <h2 style={textGrey}>Depoimentos enviados:</h2>
+            <h4 style={{color:"rgb(2,155,124)"}}>Depoimentos enviados:</h4>
             {depoimentos && depoimentos.map(item => <Depoimento key={item.id_depoimentos} id={item.id_depoimentos} depoimento={item.depoimento}/>)}
         </>
     )
@@ -64,5 +64,5 @@ export default Depoimentos;
 
 
 const textGrey = {
-    color:"rgb(71,74,81)"
+    color:"rgb(166,166,166)"
   }

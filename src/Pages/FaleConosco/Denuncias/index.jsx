@@ -35,7 +35,7 @@ const Denuncia = () => {
     return(
         <>
        
-          <h2 style={{ color: "#952790" }}>Denúncia</h2>
+          <h3 style={{color:"rgb(2,155,124)"}}>Denúncia</h3>
           <Form onSubmit={enviaDenuncia} className="my-2" style={textGrey} >
             <Form.Group controlId="nome">
               <Form.Label>Nome do estabelecimento: </Form.Label>
@@ -64,5 +64,5 @@ const Denuncia = () => {
 export default Denuncia;
 
 const textGrey = {
-  color:"rgb(71,74,81)"
+  color:"rgb(166,166,166)"
 }

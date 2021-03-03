@@ -13,12 +13,9 @@ const GestanteMae = () => {
 
       <Jumbotron fluid id="jumbotron">
         <Container>
-          <h1>
-            {" "}
-            <strong>Informações à Gestante/Mãe </strong>{" "}
-          </h1>
+        
           <br />
-          <p style={{ fontSize: "23px" }}>
+          <p style={{ fontSize: "20px" }}>
             Aqui, você vai encontrar orientações para realização da entrega
             voluntária da criança para adoção.
           </p>
@@ -28,13 +25,13 @@ const GestanteMae = () => {
       <Container>
         <Row>
           <Col xs={12} sm={12} md={9} lg={6} className="mb-4">
-            <img src={Gestante} style={{ width: "50%" }} alt="gestante" />
+            <img src={Gestante} style={{ width: "50%", margin: "0 0 0 25%"}} alt="gestante" />
           </Col>
           <Col xs={12} sm={12} md={9} lg={6}>
             <Row style={RowsGestante} className="float-end">
-              <h2 style={{ color: "#952790" }}>
-                <strong>Onde Buscar Atendimento</strong>{" "}
-              </h2>
+              <h4 style={{ color: "#952790" }}>
+                Onde Buscar Atendimento{" "}
+              </h4>
               <p style={{ color: "" }}>
                 Procurar um profissional nas rede de atendimento , nas áreas da
                 assistência social, saúde, Conselho Tutelar, Ministério Público,
@@ -43,11 +40,11 @@ const GestanteMae = () => {
               </p>
             </Row>
 
-            <Row style={RowsGestante} className="float-end">
-              <h2 style={{ color: "#952790" }}>
+            <Row style={RowsGestante2} className="float-end">
+              <h4 style={{ color: "rgb(26, 164, 136)"}}>
                 {" "}
-                <strong>Como é feito o Atendimento</strong>
-              </h2>
+                Como é feito o Atendimento
+              </h4>
               <p>
                 O atendimento é feito na Vara da Infância e Juventude, a
                 gestante ou mãe do bebê ou criança será atendida por psicólogos
@@ -63,11 +60,11 @@ const GestanteMae = () => {
           </Col>
 
           <Col md={12} style={{}}>
-            <Row style={RowsGestante}>
-              <h2 style={{ color: "#952790" }}>
+            <Row style={RowsGestante1}>
+              <h4 style={{ color: "rgb(218, 112, 214)", textAlign: "right" }}>
                 {" "}
-                <strong>Direitos da Gestante/Mãe</strong>
-              </h2>
+                Direitos da Gestante/Mãe
+              </h4>
               <p>
                 A gestante ou mãe de recém-nascido, encontra-se o direito ao
                 sigilo sobre a entrega (ECA, art. 19-A, § 5º), sobre o
@@ -131,12 +128,17 @@ const GestanteMae = () => {
 export default GestanteMae;
 
 const RowsGestante = {
-  borderRight: "6px solid #ffe76d",
-  borderRadius: "5px",
-  fontSize: "19px",
-  color:"rgb(71,74,81)"
+  
+  color:"rgb(166,166,166)"
 };
-
+const RowsGestante1 = {
+  borderRight: "3px solid rgb(218, 112, 214)",
+  color:"rgb(166,166,166)"
+};
+const RowsGestante2 = {
+  borderLeft: "3px solid rgb(26, 164, 136)",
+  color:"rgb(166,166,166)"
+};
 const textGrey = {
-  color:"rgb(71,74,81)"
+  color:"rgb(166,166,166)"
 }

@@ -21,7 +21,7 @@
 
 }
 .containerBanner .underline {
-  padding: 1px 120px;
+  padding: 1px 100px;
   background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(218,112,214,.3),rgba(218,112,214,1));
   display: inline;
 }
@@ -29,19 +29,19 @@
 @media (min-width: 990px) {
   .bannerLegislacao {
     height: 20rem;
-    background-image: url(./eca-svg-1024+.svg);
+    background-image: url(./svg-1024+.svg);
   }
 }
 @media (max-width: 989px) {
   .bannerLegislacao {
     height: 18rem;
-    background-image: url(./eca-svg-1024.svg);
+    background-image: url(./svg-1024.svg);
   }
 }
 @media (max-width: 700px) {
   .bannerLegislacao {
     height: 15rem;
-    background-image: url(./eca-svg-768.svg);
+    background-image: url(./svg-768.svg);
   }
   .containerBanner h1 {
     font-size: 1.5rem;
