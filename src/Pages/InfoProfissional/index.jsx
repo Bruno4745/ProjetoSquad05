@@ -97,7 +97,7 @@ const InfoProfissional = () => {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col md={12} style={{ color:"rgb(166, 166, 166)", fontSize: "19px" }}>
+          <Col md={12} style={{ color:"rgb(118, 118, 118)", fontSize: "19px" }}>
             <ul>
               <li>
                 Uma postura não julgadora e não preconceituosa de todos os
@@ -148,7 +148,7 @@ const InfoProfissional = () => {
               <h3 style={{ color:"rgb(224, 89, 89)"}}>
                 <strong>Atenção</strong>
               </h3>
-              <p style={{ color:"rgb(166, 166, 166)", borderLeft: "5px solid rgb(224, 89, 89)", padding:"15px" }}>
+              <p style={{ color:"rgb(118, 118, 118)", borderLeft: "5px solid rgb(224, 89, 89)", padding:"15px" }}>
                 
                   Para garantir o direito da gestante de ser atendida
                   prontamente pela Vara da Infância e Juventude, o Estatuto da
@@ -225,19 +225,19 @@ export default InfoProfissional;
 
 const BorderProfs = {
   borderRight: "3px solid #ffe76d",
-  color:"rgb(166,166,166)",
+  color:"rgb(118, 118, 118)",
   };
 
 const Border2Profs = {
-  color:"rgb(166,166,166)",
+  color:"rgb(118, 118, 118)",
   borderlext: "3px solid #ffe76d",
  };
 
 const Row10Profs = {
-  color: "rgb(166,166,166)",
+  color: "rgb(118, 118, 118)",
 };
 
 const Border3Profs = {
   borderRight: "3px solid rgb(26, 164, 136)",
-  color:"rgb(166,166,166)",
+  color:"rgb(118, 118, 118)",
   };

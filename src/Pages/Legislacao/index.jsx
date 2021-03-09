@@ -189,7 +189,7 @@ export default Legislacao;
 
 
 const ParagrafoLei = {
-   marginLeft: "1%",
-  color:"rgb(166,166,166)"
+  marginLeft: "1%",
+  color:"rgb(118, 118, 118)"
 }
 

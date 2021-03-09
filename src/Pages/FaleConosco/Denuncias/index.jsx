@@ -64,5 +64,5 @@ const Denuncia = () => {
 export default Denuncia;
 
 const textGrey = {
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 }

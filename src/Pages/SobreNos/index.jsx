@@ -167,7 +167,7 @@ export default function SobreNos() {
 
 const sobreNosQuemSomos = {
   borderRight: '3px solid rgb(2, 155, 124)',
-    color:"rgb(166,166,166)"
+    color:"rgb(118, 118, 118)"
 }
 
 const SobreNosJustificativa = {
@@ -190,5 +190,5 @@ const SobreNosParceiros = {
 }
 
 const textGrey = {
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 }

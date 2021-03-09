@@ -129,16 +129,16 @@ export default GestanteMae;
 
 const RowsGestante = {
   
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 };
 const RowsGestante1 = {
   borderRight: "3px solid rgb(218, 112, 214)",
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 };
 const RowsGestante2 = {
   borderLeft: "3px solid rgb(26, 164, 136)",
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 };
 const textGrey = {
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 }

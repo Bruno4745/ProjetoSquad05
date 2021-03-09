@@ -96,7 +96,7 @@ import roda from "./img/livro.jpg";
       </Row>
 
       <Row className="justify-content-md-center mt-5">
-        <Col md={12} style={{color: "rgb(166,166,166)"}} >
+        <Col md={12} style={{color: "rgb(118, 118, 118)"}} >
           <li>
             (...) Os pequenos abandonados, recolhidos ao Hospital de Caridade,
             eram então encaminhados a amas de leite e, posteriormente, a amas
@@ -150,11 +150,11 @@ export default Historia
 
 const historiaFilhosdaRoda = {
   borderRight: "3px solid rgb(2, 155, 124)",
-  color:"rgb(166,166,166)"
+  color:"rgb(118, 118, 118)"
 };
 
 const historiaContextoSocial = {
   borderLeft: "3px solid rgb(2, 155, 124)",
   margin: "10px 0",
-  color:"rgb(166,166,166)",
+  color:"rgb(118, 118, 118)",
 };

@@ -59,5 +59,5 @@ export default Contatos;
 
 
 const textGrey = {
-  color:"rgb(166, 166, 166)"
+  color:"rgb(118, 118, 118)"
 }

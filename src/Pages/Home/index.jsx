@@ -33,13 +33,13 @@ const Home = () => {
 
         <Row className="justify-content-md-center">
 
-          <Col md={12} style={{color:"rgb(166,166,166)"}}>
+          <Col md={12} style={{color:"rgb(118, 118, 118)"}}>
 
             
             <h3 style={{margin:'15px'}}><span>ENTREGAR É DIFERENTE </span><strong style={{ color: "#952790"}}>DE ABANDONAR</strong></h3>
            
 
-            <Row className="justify-content-md-start" style={{color:"rgb(166,166,166)"}}>
+            <Row className="justify-content-md-start" style={{color:"rgb(118, 118, 118)"}}>
               <Col style={homeRow1} md={6}>
                 <p>Entregar um bebê à Justiça (ao Fórum) para adoção é um direito garantido por lei. Entregar é diferente de abandonar. A entrega do bebê para a Justiça não é crime.
                   </p>
@@ -186,5 +186,5 @@ const homeRow6 = {
   
   borderLeft: '5px solid rgb(224, 89, 89)',
   padding:'8px',
-  color:'rgb(166,166,166)'
+  color:'rgb(118, 118, 118)'
 }
